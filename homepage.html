@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+      nav{
+        background: #EDDCBC;
+      }
+      button{
+        background: #F1BB93;
+      }
+      .sidebar {
+        background-color: #EDDCBC;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 60px;
+        }
+
+        .main-content {
+        margin-left: 200px;
+        padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-light fs-3" href="https://cit.kmutnb.ac.th/">CIT</a>
+            <div class="col-3">
+          
+              <div class="btn-group">
+                <a href="homepage.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light" aria-current="page">MainPage</a>
+                <a href="EnET60.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 60</a>
+                <a href="EnET65.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 65</a>
+              </div>
+          
+            </div>
+            <div class="col-3">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="ค้นหาวิชาหรืออาจารย์" aria-label="Search">
+                    <button class="btn fw-bold text-light" style = "background-color: #F1BB93;"type="submit">Search</button>
+                </form>
+            
+            </div>
+            <div class="col-3">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle fw-bold text-light" style="background-color: #F1BB93;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Username
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Report a Problem</a></li>
+                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="">
+            <div class="card-body  text-light" style="background-color: #F1BB93;">
+              <h5 class="card-title fw-bold">Hello User!</h5>
+              <p class="card-text">Welcome to our web ,You can use our service for free here and this is our service</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Search Course / Teacher</li>
+              <li class="list-group-item">Comment to Course or Teacher</li>
+              <li class="list-group-item">Report a Problem</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="">
+            <div class="card-body  text-light" style="background-color: #F1BB93;">
+              <h5 class="card-title fw-bold">How to Comment?</h5>
+              <p class="card-text">You can Comment to Course or teacher But your comment will not be shown until admin approve it.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Select Course / Teacher</li>
+              <li class="list-group-item">Click Comment Button</li>
+              <li class="list-group-item">Comment</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Example</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="">
+            <div class="card-body text-light" style="background-color: #F1BB93;">
+              <h5 class="card-title fw-bold">How to Report?</h5>
+              <p class="card-text">When you find that the information is wrong, you press the report button.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Select topic to <b>Information Wrong</b></li>
+              <li class="list-group-item">Insert <b>CourseID</b></li>
+              <li class="list-group-item">Give Right information</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Example</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+</body>
+</html>
