@@ -33,7 +33,7 @@
         background: 
             #EDDCBC 
     }
-    @media (min-width: 768px) {  
+    @media (min-width: 992px) {  
     body{
         background: linear-gradient(
             to right,
@@ -84,8 +84,8 @@ color: #000000;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
-line-height: 48px;
+font-size: 96px;
+line-height: 116px;
 text-align: center;
 
 color: #000000;
@@ -99,36 +99,41 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     <h1></h1>
     
     <div class="container">
-    <div class="row position-absolute top-50">
+    <div class="row position-absolute top-50 start-50 translate-middle">
         
-        <div class="col-md-5 container">
+        <div class="col-lg-5 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
             <div class="l1">Hello Friend</div>
             <div class="l2">Enter your personal details and start journey with us</div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-5 container">
-            <div class="l3">Create Account</div>
+        <div class="mb-5 text-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+            <div class="l1" style="font-size: 32px;">Hello Friend</div>
+            <div class="l1" style="font-size: 32px;">Enter your personal details</div>
+            
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5 ">
+            <div class="l3 mb-5">Register</div>
             <div class="text-dark" >
                 
                     <div class="row mb-2 " id="lable">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-10">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
                             <label id="lable" class="col-form-label">Full Name :</label>
-                            <input type="text" class="form-control" name="name" required>
+                            <input type="text" class="form-control" placeholder="Ex : Many John" name="name" required>
                         </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-lg-1"></div>
                     </div>
                     <div class="row mb-2 ">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-10">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
                             <label id="lable" class="col-form-label">Email Address :</label>
-                            <input type="email" class="form-control" name="email" required>
+                            <input type="email" class="form-control" placeholder="username@email.com" name="email" required>
                         </div>
-                        <div class="col-md-1"></div>
+                        <div class="col-lg-1"></div>
                     </div>
                     <div class="row mb-5 ">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-10">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
                             <label id="lable" class="col-form-label">Password :</label>
                             <div class="input-group">
                                 <input type="password" class="form-control"  name="pwd" required id="password">
@@ -141,8 +146,15 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                        
                         
                     </div>
-                    <div class="row mb-2">
-                        <button type="button" class="btn btn-success btn-sm">Create Account</button>
+                    <div class="row mb-2 " id="lable">
+                        <div class="col-lg-2 col-1"></div>
+                        <div class="col-lg-3 col-4">
+                        <button type="button" class="btn fw-bold text-light"style= "background-color: #F1BB93;">Register</button></div>
+                        <div class="col-lg-2 col-1"></div>
+                        
+                        <div class="col-lg-5 col-6">
+                        <a href="login.html"><button type="button" class="btn fw-bold text-light"style= "background-color: #F1BB93;">Login</button></a></div>
+                        
                     </div>
             </div>
         </div>
