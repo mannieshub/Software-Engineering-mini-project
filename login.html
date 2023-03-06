@@ -30,14 +30,20 @@
 </head>
 <style>
     body{
+        background: 
+            #EDDCBC 
+    }
+    @media (min-width: 992px) {  
+    body{
         background: linear-gradient(
-            to right,
+            to left,
             #EDDCBC 0%,
             #EDDCBC 50%,
             white 50%,
             white 0%
         )
     }
+}
     #lable{
         font-family: 'Inter';
         font-style: normal;
@@ -70,15 +76,11 @@ text-align: center;
 color: #000000;
 
     }
-    .l3{
-       
-
-
-font-family: 'Inter';
+    .l3{font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
-line-height: 48px;
+font-size: 96px;
+line-height: 116px;
 text-align: center;
 
 color: #000000;
@@ -92,26 +94,26 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     <h1></h1>
     
     <div class="container">
-        <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-4">
-            <div class="l1">Hello Friend</div>
-            <div class="l2">Enter your personal details and start journey with us</div>
+        <div class="row  position-absolute top-50 start-50 translate-middle">
+        <div class="mb-5 text-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+            <div class="l1" style="font-size: 32px;">Welcome to</div>
+            <div class="l1" style="font-size: 32px;">your Study Plan!</div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-            <div class="l3 text-center">Sign in Here</div>
+        <div class="col-lg-5">
+            <div class="l3 mb-5">Login</div>
             <div class="text-dark" >
-                    <div class="row mb-2 ">
-
-                        <div class="col-md-12">
-                            <label id="lable" class="col-form-label">Email Address :</label>
-                            <center><input type="email" class="form-control"placeholder="username@email.com" name="name" required></center>
-                        </div>
+                <div class="row mb-2 ">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                        <label id="lable" class="col-form-label">Email Address :</label>
+                        <input type="email" class="form-control" placeholder="username@email.com" name="email" required>
                     </div>
-                    <div class="row mb-2 ">
-                        <div class="col-md-12">
-                            <label class="col-md-3 col-form-label">Password :</label>
+                    <div class="col-lg-1"></div>
+                </div>
+                    <div class="row mb-5 ">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
+                            <label id="lable" class="col-form-label">Password :</label>
                             <div class="input-group">
                                 <input type="password" class="form-control"  name="pwd" required id="password">
                                 <span class="input-group-text " onclick="password_show_hide();">
@@ -120,19 +122,33 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                                 </span>
                             </div>
                         </div>
-
-                        <div class="col-md-1">
-                            
-                        </div>
+                        
+                        
                     </div>
-                    <div class="center">
+                    <div class="row mb-2 " id="lable">
+                        <div class="col-lg-2 col-1"></div>
+                        <div class="col-lg-3 col-4">
                         <button type="button" class="btn fw-bold text-light"style= "background-color: #F1BB93;">Login</button>
-                        <a href="register.html"><button type="button" class="btn fw-bold text-light"style= "background-color: #F1BB93;">Go back</button></a>
+                        </div>
+                        <div class="col-lg-2 col-1"></div>
+                        
+                        <div class="col-lg-5 col-6">
+                        <a href="register.html"><button type="button" class="btn fw-bold text-light"style= "background-color: #F1BB93;">Register</button></a>
+                        </div>
                     </div>
             </div>
         </div>
+
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
+            <div class="l1">Welcome to </div>
+            <div class="l2">your Study Plan !</div>
+        </div>
+        
+        
     </div>
     </div>
+    
     
 </body>
 </html>
