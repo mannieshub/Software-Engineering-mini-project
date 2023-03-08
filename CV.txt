@@ -97,7 +97,7 @@ while cap.isOpened():
         
         # Display the processed frame (optional)
         cv2.imshow('frame', frame)
-        
+["{}        
         # Exit if the user presses 'q'
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
@@ -112,4 +112,24 @@ out.release()
 cv2.destroyAllWindows()
 
 
+--------------------------------------------------------------
+import cv2
+
+# Load the image
+img = cv2.imread('image.jpg')
+
+# Split the image into its RGB channels
+b, g, r = cv2.split(img)
+
+# Set the green and blue channels to 0
+g.fill(0)
+b.fill(0)
+
+# Merge the channels back into an RGB image, but only keep the red channel
+img_red = cv2.merge((b, g, r))
+
+# Show the resulting image
+cv2.imshow('Red channel only', img_red)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
