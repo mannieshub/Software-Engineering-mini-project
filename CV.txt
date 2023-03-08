@@ -13,3 +13,23 @@ cv2_imshow(im_flip)
 
 cv2.waitkey(0)
 cv2.destroyAllwindow()
+
+------------------------------------------------------------------------------------
+import cv2
+
+img = cv2.imread("image.jpg")
+new_width = 500
+new_height = 500
+
+cv2.imshow("Original Image", img)
+cv2.waitKey(0)
+
+im_resize = cv2.resize(img, (new_width, new_height), interpolation=cv2.INTER_LINEAR)
+cv2.imshow("Resized Image", im_resize)
+cv2.waitKey(0)
+
+im_flip = cv2.flip(img, 0)
+cv2.imshow("Flipped Image", im_flip)
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()
