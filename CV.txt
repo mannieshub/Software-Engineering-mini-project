@@ -1,0 +1,15 @@
+import cv2
+from google.colab.patches import cv2_imshow
+img = cv2.imread("image.jpg") //image = ??????? 
+
+cv2.imread("img")
+cv2_imshow("img")
+
+im_resize=cv2.resize(img,(new_width,new_height),interpolation=cv2.INTER_LINEAR)
+cv2_imshow(im_resize)
+
+im_flip = cv2.flip(img,0)
+cv2_imshow(im_flip)
+
+cv2.waitkey(0)
+cv2.destroyAllwindow()
