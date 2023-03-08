@@ -1,18 +1,3 @@
-import cv2
-from google.colab.patches import cv2_imshow
-img = cv2.imread("image.jpg") //image = ??????? 
-
-cv2.imread("img")
-cv2_imshow("img")
-
-im_resize=cv2.resize(img,(new_width,new_height),interpolation=cv2.INTER_LINEAR)
-cv2_imshow(im_resize)
-
-im_flip = cv2.flip(img,0)
-cv2_imshow(im_flip)
-
-cv2.waitkey(0)
-cv2.destroyAllwindow()
 
 ------------------------------------------------------------------------------------
 import cv2
@@ -33,3 +18,58 @@ cv2.imshow("Flipped Image", im_flip)
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
+------------------------------------------------------------------------------------
+import cv2
+import numpy as np
+
+# create a VideoCapture object and read the video file
+cap = cv2.VideoCapture('video.mp4')
+
+# check if the video file was successfully opened
+if not cap.isOpened():
+    print('Error opening video file')
+
+# read the video frame by frame
+while cap.isOpened():
+    # read the next frame from the video
+    ret, frame = cap.read()
+
+    # check if the frame was successfully read
+    if not ret:
+        print('End of video')
+        break
+
+    # display the current frame
+    cv2.imshow('Frame', frame)
+
+    # wait for 25 milliseconds and check if the user pressed 'q' key to quit
+    if cv2.waitKey(25) & 0xFF == ord('q'):
+        break
+# read the image
+img = cv2.imread('image.jpg')
+
+# convert the image to HSV color space
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+
+# define the lower and upper bounds of the red color in HSV color space
+lower_red = np.array([0, 50, 50])
+upper_red = np.array([10, 255, 255])
+red_mask1 = cv2.inRange(hsv, lower_red, upper_red)
+
+lower_red = np.array([170, 50, 50])
+upper_red = np.array([180, 255, 255])
+red_mask2 = cv2.inRange(hsv, lower_red, upper_red)
+
+# combine the masks to obtain the final red mask
+red_mask = cv2.bitwise_or(red_mask1, red_mask2)
+
+# apply the mask to the original image to obtain the red filter
+red_filter = cv2.bitwise_and(img, img, mask=red_mask)
+# release the VideoCapture object and close all windows
+cap.release()
+cv2.destroyAllWindows()
+
+
+
+
+
