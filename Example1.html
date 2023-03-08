@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <link rel="stylesheet" type="text/css" href="path/to/revolution-slider/css/settings.css">
+        <link rel="stylesheet" type="text/css" href="path/to/revolution-slider/css/navigation.css">
+        <script type="text/javascript" src="path/to/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="path/to/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+      
+      
+</head>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+      jQuery("#rev_slider_1").revolution({
+        sliderType:"standard",
+        sliderLayout:"fullscreen",
+        delay:5000,
+        navigation: {
+          arrows:{enable:true}
+        },
+        responsiveLevels:[1240,1024,778,480],
+        gridwidth:[1240,1024,778,480],
+        gridheight:[868,768,960,720]
+      });
+    });
+  </script>
+  
+<body>
+    <div class="rev_slider_wrapper">
+        <div id="rev_slider_1" class="rev_slider">
+          <ul>
+            <li data-transition="fade">
+              <img src="Front_end/Homepage.png" alt="Slide 1">
+              <div class="tp-caption" data-x="left" data-y="top" data-speed="500" data-start="0" data-easing="easeOutBack">Caption 1</div>
+            </li>
+            <li data-transition="slideleft">
+              <img src="Front_end/Untitled.png" alt="Slide 2">
+              <div class="tp-caption" data-x="right" data-y="bottom" data-speed="500" data-start="0" data-easing="easeOutBack">Caption 2</div>
+            </li>
+            <!-- Add more slide elements as needed -->
+          </ul>
+        </div>
+      </div>
+      
+</body>
+</html>
