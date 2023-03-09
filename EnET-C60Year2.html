@@ -32,7 +32,7 @@
     </style>
     <script>
       $(function(){
-        $("#navbar").load("nav_page.html");
+        $("#navbar").load("nav_page.php");
       });
       </script>
 </head>

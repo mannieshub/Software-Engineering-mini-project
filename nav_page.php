@@ -1,5 +1,29 @@
-<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-<style>
+<?php
+session_start(); // Start the session
+
+isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
+
+// Check the user's role
+if($ro == "Student"){
+  // Display content for Students
+  $r = "[Student]";
+  $u = $_SESSION['username'];
+  
+} elseif($ro == "admin"){
+  // Display content for admins
+  $r = "[Admin]";
+  $u = $_SESSION['username'];
+  
+}
+else{
+  // Display content for guests
+  $r = "[Guest]";
+  $u = "";
+}
+?>
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
     nav {
       background-color: #EDDCBC;
       font-size: 20px;
@@ -39,17 +63,19 @@
         <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item me-lg-2 mb-2">
-                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" aria-current="page" href="homepage.html">Main Page</a>
+                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" aria-current="page" href="homepage.php">Main Page</a>
                 </li>
+                <?php if($ro != ""){ ?>
                 <li class="nav-item me-lg-2 mb-2">
                     <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="#">Add Course</a>
                 </li>
+                <?php } ?>
                 <li class="nav-item me-lg-2 mb-2">
                     <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="#">หลักสูตร ?</a>
                 </li>
             </ul>
         </div>
-        <div class="">
+        <div class="mx-3">
             <form class="d-flex" role="search">
                 <div class="input-group">
                     <input class="form-control" type="search" placeholder="ค้นหาวิชาหรืออาจารย์" aria-label="Search">
@@ -57,14 +83,19 @@
                   </div>
             </form>
         </div>
-        <div class="dropdown ms-lg-1">
-            <button class="btn dropdown-toggle fw-bold text-light" style="background-color: #F1BB93;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Username
+        <div class="dropdown ">
+            <button class="btn dropdown-toggle fw-bold text-light" style="background-color: #F1BB93;" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="userbut">
+                <?php echo $r,$u; ?>
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu " aria-labelledby="userbut" >
+                <?php if($ro == ""){ ?>
+                  <li><a class="dropdown-item" href="login.php">Login</a></li>
+                  <li><a class="dropdown-item" href="register.php">Register</a></li>
+                <?php } else { ?>
                 <li><a class="dropdown-item" href="Profile.html">Edit Profile</a></li>
                 <li><a class="dropdown-item" href="Report.html">Report a Problem</a></li>
-                <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                <?php } ?>
             </ul>
         </div>
     </div>
