@@ -35,6 +35,10 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 22664c589fd7fc04ddad43edd1caf4bbb359a76e
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -132,9 +136,16 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
 
 </style>
+<<<<<<< HEAD
 
 <body>
 <div class="container">
+=======
+<body>
+    <h1></h1>
+    
+    <div class="container">
+>>>>>>> 22664c589fd7fc04ddad43edd1caf4bbb359a76e
     <div class="row position-absolute top-50 start-50 translate-middle">
         <div class="col-lg-5 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block">
             <div class="l1">Hello Friend</div>
@@ -147,6 +158,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-5 ">
+<<<<<<< HEAD
             <form action="register_save.php" method="post"> 
                 <div class="l3 mb-5">Register</div>
                 <div class="text-dark" >
@@ -158,6 +170,13 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                         </div>
                         <div class="col-lg-1"></div>
                     </div>
+=======
+            <form action="register.php" method="post">
+                
+            <div class="l3 mb-5">Register</div>
+            <div class="text-dark" >
+                
+>>>>>>> 22664c589fd7fc04ddad43edd1caf4bbb359a76e
                     <div class="row mb-2 " id="lable">
                         <div class="col-lg-1"></div>
                         <div class="col-lg-10">
