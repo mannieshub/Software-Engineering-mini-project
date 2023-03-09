@@ -3,7 +3,7 @@
 session_start();
 
 // Establishing a database connection
-$host = "localhost";
+$host = "softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.amazonaws.com";
 $user = "admin";
 $password = "Mannies_08";
 $database = "SoftwareEngineerPro";
