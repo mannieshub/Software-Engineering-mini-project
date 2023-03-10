@@ -21,7 +21,9 @@ else{
   $u = "";
 }
 ?>
-
+<!--Icon-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <style>
     nav {
