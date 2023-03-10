@@ -23,24 +23,11 @@ $conn = new PDO("mysql:host=softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.ama
     header("Location: homepage.php"); // Redirect to the home page
     die();
   } else {
-    // Invalid login credentials
-    $error = "Invalid login credentials. Please try again.";
+    $_SESSION["error"] = "1";
+        header("Location: login.php");       
+        die();
   }
 
 ?>
 
-<!-- HTML form for login 
-<form action="" method="post">
-  <input type="text" name="username" placeholder="Username">
-  <input type="password" name="password" placeholder="Password">
-  <button type="submit" name="submit">Login</button>
-</form>
--->
-<?php
-// Displaying an error message if login failed
-if(isset($error)){
-  echo $error;
-  header("Location: register.php"); 
-  die();
-}
-?>
+
