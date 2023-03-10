@@ -95,7 +95,7 @@ else{
                   <li><a class="dropdown-item" href="register.php">Register</a></li>
                 <?php } else { ?>
                 <li><a class="dropdown-item" href="Profile.html">Edit Profile</a></li>
-                <li><a class="dropdown-item" href="Report.html">Report a Problem</a></li>
+                <li><a class="dropdown-item" href="Report.php">Report a Problem</a></li>
                 <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                 <?php } ?>
             </ul>

@@ -77,6 +77,11 @@
     <div class="col-4">
       
     </div>
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4 text-center mt-3 fs-5"><a href="homepage.php"> Back to homepage</a></div>
+      <div class="col-4"></div>
+    </div>
   </div>
   </div>
   
