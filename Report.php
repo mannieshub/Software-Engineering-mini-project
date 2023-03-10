@@ -49,17 +49,24 @@
           <h3>Report to Admin</h3>
         </div>
         <div class="card-body">
-            <form method="POST" action="process-form.php">
+            <form action="Report_save.php" method="post">
               <label for="topic">Select a Topic:</label>
               <select id="topic" name="topic">
                 <option value="topic1">------Click Here------</option>
-                <option value="topic2">รายงานปัญหาการใช้งาน</option>
-                <option value="topic3">ข้อมูลไม่ถูกต้อง</option>
+                <option value="รายงานปัญหาการใช้งาน">รายงานปัญหาการใช้งาน</option>
+                <option value="ข้อมูลไม่ถูกต้อง">ข้อมูลไม่ถูกต้อง</option>
               </select>
               <br>
+              <div class="mb-3 mt-3 row">
+                <label class="col-sm-2 col-form-label">ID</label>
+                <div class="col-sm-10">
+                  <input type="text" placeholder="ใส่รหัสวิชาในกรณีที่ข้อมูลมีปัญหา" class="form-control" name="CourseID">
+                </div>
+              </div>
+              
               <label for="message">Enter your message:</label>
               <br>
-              <textarea id="message" name="message" class="form-control" rows="8" ></textarea>
+              <textarea id="message" name="detail" class="form-control" rows="8" ></textarea>
               <br>
               <input type="submit" value="Submit">
             </form>
