@@ -20,14 +20,13 @@ $conn = new PDO("mysql:host=softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.ama
     $_SESSION['stdid'] = $data["StudentID"];
     $_SESSION["username"] = $data["StudentName"];
     $_SESSION["role"] = $data["Role"];
+    $_SESSION["id"] = session_id();
     header("Location: homepage.php"); // Redirect to the home page
     die();
-  } else {
-    $_SESSION["error"] = "1";
-        header("Location: login.php");       
-        die();
-  }
-
+  }else{
+    $_SESSION["error"] = 1;
+    header("Location: login.php");       
+    die();
+}
+$conn=null;
 ?>
-
-

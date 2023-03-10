@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -97,28 +100,6 @@
 <body>
     <h1></h1>
     <form action="verify.php" method="post">
-
-        <?php
-        if (isset($_SESSION["error"]) == "1") {
-        ?>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <?php
-                    echo "<div class=\"alert alert-danger bi bi-exclamation-triangle\" role=\"alert\">";
-                    echo "  ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
-                    echo "</div>";
-                    unset($_SESSION["error"]);
-
-                    ?>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        <?php
-        }
-        ?>
-
-
         <div class="container">
             <div class="row  position-absolute top-50 start-50 translate-middle">
                 <div class="mb-5 text-center d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
@@ -127,7 +108,24 @@
                 </div>
 
                 <div class="col-lg-5">
-                    <div class="l3 mb-5">Login</div>
+                    <div class="l3 mb-5 ">Login</div>
+                    <?php
+                    if (isset($_SESSION["error"]) == 1) {
+                    ?>
+                        <div class="row">
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-10">
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                    <strong>Invalid Email or Password!</strong>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="col-lg-1"></div>
+                        </div>
+                    <?php
+                        unset($_SESSION["error"]);
+                    }
+                    ?>
                     <div class="text-dark">
                         <div class="row mb-2 ">
                             <div class="col-lg-1"></div>
