@@ -4,9 +4,12 @@ session_start();
 
 
 // Establishing a database connection
-$conn = new PDO("mysql:host=softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.amazonaws.com;
-    dbname=SoftwareEngineerPro;charset=utf8","admin","Mannies_08");
-
+$host = "noteapinun.trueddns.com";
+$dbport = "28502";
+$dbname = "se_db";
+$dbusername = "web";
+$dbpassword = "web1234";
+$conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);
 // Handling the login request
 
   isset($_POST['email']) ? $u = $_POST['email'] : $u = "";
@@ -20,27 +23,13 @@ $conn = new PDO("mysql:host=softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.ama
     $_SESSION['stdid'] = $data["StudentID"];
     $_SESSION["username"] = $data["StudentName"];
     $_SESSION["role"] = $data["Role"];
+    $_SESSION["id"] = session_id();
     header("Location: homepage.php"); // Redirect to the home page
     die();
-  } else {
-    // Invalid login credentials
-    $error = "Invalid login credentials. Please try again.";
-  }
-
-?>
-
-<!-- HTML form for login 
-<form action="" method="post">
-  <input type="text" name="username" placeholder="Username">
-  <input type="password" name="password" placeholder="Password">
-  <button type="submit" name="submit">Login</button>
-</form>
--->
-<?php
-// Displaying an error message if login failed
-if(isset($error)){
-  echo $error;
-  header("Location: register.php"); 
-  die();
+  }else{
+    $_SESSION["error"] = 1;
+    header("Location: login.php");       
+    die();
 }
+$conn=null;
 ?>

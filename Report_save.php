@@ -6,7 +6,12 @@ $courseID = $_POST['CourseID'];
 $detail = $_POST['detail'];
 
 try {
-    $conn = new PDO("mysql:host=softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.amazonaws.com;dbname=SoftwareEngineerPro;charset=utf8", "admin", "Mannies_08");
+    $host = "noteapinun.trueddns.com";
+    $dbport = "28502";
+    $dbname = "se_db";
+    $dbusername = "web";
+    $dbpassword = "web1234";
+    $conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $conn->prepare("INSERT INTO AdminDB (Topic, ID, Information) VALUES (:topic, :courseID, :detail)");
@@ -19,8 +24,7 @@ try {
     $_SESSION['add_post'] = 'success';
     header("Location: Report.php");
     die();
-} catch(PDOException $e) {
+} catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
 $conn = null;
-?>
