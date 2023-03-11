@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include_once 'db_connect.php';
 $stdID = $_SESSION['stdid'];
 $user = $_SESSION["username"];
 $email = $_SESSION["email"];
@@ -67,26 +67,10 @@ $email = $_SESSION["email"];
 <body>
   <div id="navbar" class="mb-3"></div>
   <div class="container">
-    <form action="Profile_save.php" method="post">
+    <form action="Ch_pwd_save.php" method="post">
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
-          <?php
-          if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 1){
-            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    Password is incorrect
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>';
-            unset($_SESSION["p_error"]);
-        }else if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 2){
-            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    Database error
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>';
-            unset($_SESSION["p_error"]);
-        }
-        
-          ?>
           <div class="card text-dark bg-white border-primary">
             <div class="card-header bg-primary text-white ">Edit Profile</div>
             <div class="card-body">

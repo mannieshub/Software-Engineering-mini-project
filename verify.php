@@ -22,6 +22,7 @@ $conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $db
     $data=$result->fetch(PDO::FETCH_ASSOC);
     $_SESSION['stdid'] = $data["stdID"];
     $_SESSION["username"] = $data["stdName"];
+    $_SESSION["email"] = $u;
     $_SESSION["role"] = $data["Role"];
     $_SESSION["id"] = session_id();
     header("Location: homepage.php"); // Redirect to the home page
