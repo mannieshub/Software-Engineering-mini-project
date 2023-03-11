@@ -17,12 +17,12 @@ $conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $db
 
 
 $password = sha1($password);
-$sql = "SELECT * FROM StudentDB where StudentID = '$stdID'";
+$sql = "SELECT * FROM studentdb where stdID = '$stdID'";
 $result = $conn->query($sql);
 if ($result->rowCount() == 1) {
     $_SESSION["add_login"] = "error";
 } else {
-    $sql1 = "INSERT INTO StudentDB(StudentID,Email,StudentName,Password,role) 
+    $sql1 = "INSERT INTO studentdb(stdID,Email,stdName,Password,role) 
          VALUES ('$stdID','$email','$username','$password','student')";
     $conn->exec($sql1);
     $_SESSION["add_login"] = "success";

@@ -1,12 +1,12 @@
 <?php
 // Connection parameters for MySQL database
-$servername = "softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.amazonaws.com";  // Replace with your server name
-$username = "admin";    // Replace with your MySQL username
-$password = "Mannies_08";    // Replace with your MySQL password
-$dbname = "SoftwareEngineerPro";     // Replace with your database name
+$host = "noteapinun.trueddns.com";
+$dbport = "28502";
+$dbname = "se_db";
+$dbusername = "web";
+$dbpassword = "web1234";
+$conn = mysqli_connect($host, $dbusername, $dbpassword, $dbname, $dbport);
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
 if (!$conn) {
