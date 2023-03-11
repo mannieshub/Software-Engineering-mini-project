@@ -4,9 +4,12 @@ session_start();
 
 
 // Establishing a database connection
-$conn = new PDO("mysql:host=softwareengineer.cbb4idelrr6p.ap-southeast-1.rds.amazonaws.com;
-    dbname=SoftwareEngineerPro;charset=utf8","admin","Mannies_08");
-
+$host = "noteapinun.trueddns.com";
+$dbport = "28502";
+$dbname = "se_db";
+$dbusername = "web";
+$dbpassword = "web1234";
+$conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);
 // Handling the login request
 
   isset($_POST['email']) ? $u = $_POST['email'] : $u = "";
