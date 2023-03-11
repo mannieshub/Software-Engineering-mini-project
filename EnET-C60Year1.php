@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <style>
       nav{
         background: #EDDCBC;
@@ -38,7 +39,7 @@
 </head>
 <body>
 <div id="navbar"></div>
-<form action="CourseDetail.php" method="post">
+<form action="testDetailForm.php" method="post">
 <div class="container mt-4 ">
   
     <div class="row mb-4">
@@ -75,9 +76,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">030513300</h5>
                   <p class="card-text">Computer Programming</p>
-                  <input type="hidden" name="CourseID" value="030103300">
-            <button type="submit" class="btn" style="background-color: #F1BB93;">
-            <i class="bi bi-search"></i>View</button>
+                  <input type="hidden" name="CourseID" value="030513300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -90,10 +91,10 @@
                   <h5 class="card-title fw-bold">040203111</h5>
                   <p class="card-text">Engineering Mathematics 1</p>
                   <input type="hidden" name="CourseID2" value="040203112"> 
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">Engi Mathematics 2</button>
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">Engineer Math 2</button>
 
 
-                  <input type="hidden" name="CourseID" value="030103300">
+                  <input type="hidden" name="CourseID" value="040203112">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
                 </div>
@@ -225,7 +226,7 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">040203112</h5>
                   <p class="card-text">Engineering Mathematics 2</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Engi Mathematics 3</a>
+                  <a href="#" class="btn"style="background-color: #F1BB93;">Engineer Math 3</a>
                   <input type="hidden" name="CourseID" value="030103300">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
@@ -336,6 +337,5 @@
   </div>
 </div>
 </form>
-   
 </body>
 </html>

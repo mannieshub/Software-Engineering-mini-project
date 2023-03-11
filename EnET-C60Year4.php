@@ -37,217 +37,201 @@
       </script>
 </head>
 <body>
-    <!--<nav class="navbar shadow-sm">
-        <div class="container">
-          <a class="navbar-brand fw-bold text-light fs-3" href="https://cit.kmutnb.ac.th/">CIT</a>
-            <div class="col-3">
-                <div class="btn-group">
-                    <a href="homepage.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light" aria-current="page">MainPage</a>
-                    <a href="EnET60.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 60</a>
-                    <a href="EnET65.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 65</a>
-                  </div>
-
-          
+<div id="navbar"></div>
+<form action="testDetailForm.php" method="post">
+  <div class="container mt-4 ">
+      <div class="row mb-4">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;" >
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1">ชั้นปีที่ 4 ภาคการศึกษาที่ 1</span>
             </div>
-            <div class="col-3">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="EnET-C 60 Year 1" aria-label="Search">
-                    <button class="btn fw-bold text-light" style = "background-color: #F1BB93;"type="submit">Search</button>
-                </form>
-            
-            </div>
-            <div class="col-3">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle fw-bold text-light" style="background-color: #F1BB93;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Username
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Report a Problem</a></li>
-                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                    </ul>
-                  </div>
-            </div>
+          </nav>
         </div>
-    </nav>-->
-    <div id="navbar"></div>
-<div class="container mt-4 ">
+        <div class="col-4"></div>
+      </div>
+
+      <div class="row">
+        
+          <div class="col-2">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body" style="background-color:#F1EBCC ;">
+                    <h5 class="card-title fw-bold">030513162</h5>
+                    <p class="card-text">Computer Engineering Project</p>
+                    <input type="hidden" name="CourseID" value="030513162">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body" style="background-color:#F1EBCC ;">
+                    <h5 class="card-title fw-bold">030513XXX</h5>
+                    <p class="card-text">Computer Elective Course 1</p>
+                    <input type="hidden" name="CourseID" value="030513XXX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">030513XXX</h5>
+                  <p class="card-text">Computer Elective Course 2</p>
+                  <input type="hidden" name="CourseID" value="030513XXX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
+              </div>
+        </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">030513XXX</h5>
+                  <p class="card-text">Computer Elective Course 3</p>
+                  <input type="hidden" name="CourseID" value="030513XXX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-2">
+          <div class="card" style="width: 18rem;">
+              <div class="card-body" style="background-color:#F1EBCC ;">
+                <h5 class="card-title fw-bold">030513XXX</h5>
+                <p class="card-text">Computer Elective Course 4</p>
+                <input type="hidden" name="CourseID" value="030513XXX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+              </div>
+            </div>
+      </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body" style="background-color:#F1EBCC ;">
+                    <h5 class="card-title fw-bold">08010301X</h5>
+                    <p class="card-text">Language Elective Course 4</p>
+                    <input type="hidden" name="CourseID" value="08010301X">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body" style="background-color:#F1EBCC ;">
+                    <h5 class="card-title fw-bold">08XXXXXXX</h5>
+                    <p class="card-text">General Education Elective</p>
+                    
+                    <input type="hidden" name="CourseID" value="08XXXXXXX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+              
+          </div>
+      </div>
+  </div>
+
+  <div class="container mt-4 ">
     <div class="row mb-4">
       <div class="col-4"></div>
       <div class="col-4">
-        <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;" >
+        <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;">
           <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">ชั้นปีที่ 4 ภาคการศึกษาที่ 1</span>
+            <center><span class="navbar-brand mb-0">ชั้นปีที่ 4 ภาคการศึกษาที่ 2</span></center>
           </div>
         </nav>
       </div>
       <div class="col-4"></div>
     </div>
-
-    <div class="row">
-       
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513162</h5>
-                  <p class="card-text">Computer Engineering Project</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+      <div class="row">
+          
+          <div class="col-2">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body" style="background-color:#F1EBCC ;">
+                    <h5 class="card-title fw-bold">030513260</h5>
+                    <p class="card-text">Co-operative Education</p>
+                    <input type="hidden" name="CourseID" value="030513260">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </div>
                 </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513XXX</h5>
-                  <p class="card-text">Computer Elective Course 1</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-          <div class="card" style="width: 18rem;">
-              <div class="card-body" style="background-color:#F1EBCC ;">
-                <h5 class="card-title fw-bold">030513XXX</h5>
-                <p class="card-text">Computer Elective Course 2</p>
-                <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
-              </div>
-            </div>
-      </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-          <div class="card" style="width: 18rem;">
-              <div class="card-body" style="background-color:#F1EBCC ;">
-                <h5 class="card-title fw-bold">030513XXX</h5>
-                <p class="card-text">Computer Elective Course 3</p>
-                <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
-              </div>
-            </div>
-      </div>
-    </div>
-    <div class="row mt-4">
-      <div class="col-2">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body" style="background-color:#F1EBCC ;">
-              <h5 class="card-title fw-bold">030513XXX</h5>
-              <p class="card-text">Computer Elective Course 4</p>
-              <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
-            </div>
           </div>
-    </div>
-        <div class="col-1">
+          <div class="col-1">
 
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">08010301X</h5>
-                  <p class="card-text">Language Elective Course 4</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">08XXXXXXX</h5>
-                  <p class="card-text">General Education Elective</p>
-                  
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
+          </div>
+          <div class="col-2">
             
-        </div>
-    </div>
-</div>
+          </div>
+          <div class="col-1">
 
-<div class="container mt-4 ">
-  <div class="row mb-4">
-    <div class="col-4"></div>
-    <div class="col-4">
-      <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;">
-        <div class="container-fluid">
-          <center><span class="navbar-brand mb-0">ชั้นปีที่ 4 ภาคการศึกษาที่ 2</span></center>
-        </div>
-      </nav>
-    </div>
-    <div class="col-4"></div>
-  </div>
-    <div class="row">
-        
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513260</h5>
-                  <p class="card-text">Co-operative Education</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
+          </div>
+          <div class="col-2">
+              
+          </div>
+          <div class="col-1">
 
-        </div>
-        <div class="col-2">
-           
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            
-    </div>
-  
-</div>
-
-<div class="container mt-4 ">
-  <div class="row">
-    <div class="col-4">
-
-    </div>
-    <div class="col-4">
-      <div aria-label="Page navigation example">
-        <ul class="pagination justify-content-center pagination-lg">
-          <li class="page-item">
-            <a class="page-link" href="EnET-C60Year3.html" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year1.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year3.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year4.html">4</a></li>
-          <li class="page-item">
-            <a class="page-link disabled" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
+          </div>
+          <div class="col-2">
+              
       </div>
-    </div> 
-    <div class="col-4"></div>
+    
   </div>
-</div>
-   
+
+  <div class="container mt-4 ">
+    <div class="row">
+      <div class="col-4">
+
+      </div>
+      <div class="col-4">
+        <div aria-label="Page navigation example">
+          <ul class="pagination justify-content-center pagination-lg">
+            <li class="page-item">
+              <a class="page-link" href="EnET-C60Year3.php" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="EnET-C60Year1.php">1</a></li>
+            <li class="page-item"><a class="page-link" href="EnET-C60Year2.php">2</a></li>
+            <li class="page-item"><a class="page-link" href="EnET-C60Year3.php">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="EnET-C60Year4.php">4</a></li>
+            <li class="page-item">
+              <a class="page-link disabled" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> 
+      <div class="col-4"></div>
+    </div>
+  </div>
+</form>
 </body>
 </html>

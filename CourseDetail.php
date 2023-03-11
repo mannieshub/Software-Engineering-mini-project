@@ -72,3 +72,4 @@ if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
     echo "CourseID is not set or is empty.";
 }
 ?>
+</body>

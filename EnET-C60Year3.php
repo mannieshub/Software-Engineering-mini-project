@@ -37,41 +37,8 @@
       </script>
 </head>
 <body>
-    <!--<nav class="navbar shadow-sm">
-        <div class="container">
-          <a class="navbar-brand fw-bold text-light fs-3" href="https://cit.kmutnb.ac.th/">CIT</a>
-            <div class="col-3">
-                <div class="btn-group">
-                    <a href="homepage.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light" aria-current="page">MainPage</a>
-                    <a href="EnET60.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 60</a>
-                    <a href="EnET65.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 65</a>
-                  </div>
-
-          
-            </div>
-            <div class="col-3">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="EnET-C 60 Year 1" aria-label="Search">
-                    <button class="btn fw-bold text-light" style = "background-color: #F1BB93;"type="submit">Search</button>
-                </form>
-            
-            </div>
-            <div class="col-3">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle fw-bold text-light" style="background-color: #F1BB93;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Username
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Report a Problem</a></li>
-                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                    </ul>
-                  </div>
-            </div>
-        </div>
-    </nav>-->
   <div id="navbar"></div>
-  <form action="CourseDetail.php" method="post">
+  <form action="testDetailForm.php" method="post">
   <div class="container mt-4 ">
       <div class="row mb-4">
         <div class="col-4"></div>

@@ -37,40 +37,8 @@
       </script>
 </head>
 <body>
-    <!--<nav class="navbar shadow-sm">
-        <div class="container">
-          <a class="navbar-brand fw-bold text-light fs-3" href="https://cit.kmutnb.ac.th/">CIT</a>
-            <div class="col-3">
-                <div class="btn-group">
-                    <a href="homepage.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light" aria-current="page">MainPage</a>
-                    <a href="EnET60.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 60</a>
-                    <a href="EnET65.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 65</a>
-                  </div>
-
-          
-            </div>
-            <div class="col-3">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="EnET-C 60 Year 1" aria-label="Search">
-                    <button class="btn fw-bold text-light" style = "background-color: #F1BB93;"type="submit">Search</button>
-                </form>
-            
-            </div>
-            <div class="col-3">
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle fw-bold text-light" style="background-color: #F1BB93;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Username
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Edit Profile</a></li>
-                      <li><a class="dropdown-item" href="#">Report a Problem</a></li>
-                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
-                    </ul>
-                  </div>
-            </div>
-        </div>
-    </nav>-->
-    <div id="navbar"></div><form action="CourseDetail.php" method="post">
+<div id="navbar"></div>
+<form action="testDetailForm.php" method="post">
 <div class="container mt-4 ">
 
     <div class="row mb-4">
@@ -121,7 +89,7 @@
                   <h5 class="card-title fw-bold">040203211</h5>
                   <p class="card-text">Engineering Mathematics 2</p>
                   
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Engi Mathematics 3</a>
+                  <a href="#" class="btn"style="background-color: #F1BB93;">Engineer Math 3</a>
                   <input type="hidden" name="CourseID" value="030103300">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
@@ -151,7 +119,7 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">030513334</h5>
                   <p class="card-text">Digital Circuit and Logic Design</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Microcontroller Sys-</a>
+                  <a href="#" class="btn"style="background-color: #F1BB93;">Microcontroller</a>
                   <input type="hidden" name="CourseID" value="030103300">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
@@ -211,7 +179,7 @@
     <div class="col-4">
       <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;">
         <div class="container-fluid">
-          <center><span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 2 ภาคการศึกษาที่ 2</span></center>
+          <span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 2 ภาคการศึกษาที่ 2</span>
         </div>
       </nav>
     </div>
@@ -291,7 +259,7 @@
                   <a href="#" class="btn mt-3"style="background-color: #F1BB93;">C- Practice 1</a>
 
                   <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <button type="submit" class="btn mt-3" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
