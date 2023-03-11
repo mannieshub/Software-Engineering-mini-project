@@ -8,7 +8,7 @@ if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
     $dbusername = "web";
     $dbpassword = "web1234";
     $conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);
-    $sql = "SELECT * FROM CourseDB WHERE CourseID = :CourseID";
+    $sql = "SELECT * FROM courseDB WHERE CourseID = :CourseID";
 
     // Prepare the query
     $stmt = $conn->prepare($sql);

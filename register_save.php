@@ -22,8 +22,8 @@ $result = $conn->query($sql);
 if ($result->rowCount() == 1) {
     $_SESSION["add_login"] = "error";
 } else {
-    $sql1 = "INSERT INTO studentdb(stdID,Email,stdName,Password,role) 
-         VALUES ('$stdID','$email','$username','$password','student')";
+    $sql1 = "INSERT INTO studentdb(stdID,Email,stdName,Password,Role) 
+         VALUES ('$stdID','$email','$username','$password','Student')";
     $conn->exec($sql1);
     $_SESSION["add_login"] = "success";
 }

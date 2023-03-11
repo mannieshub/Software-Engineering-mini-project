@@ -13,7 +13,7 @@ session_start();
 <body>
 <?php
     session_destroy();
-    header("Location: homepage.php");
+    header("Location: login.php");
 ?>
 </body>
 </html>
