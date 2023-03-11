@@ -38,6 +38,7 @@
 </head>
 <body>
 <div id="navbar"></div>
+<form action="CourseDetail.php" method="post">
 <div class="container mt-4 ">
   
     <div class="row mb-4">
@@ -54,16 +55,17 @@
 
     <div class="row">
     <div class="col-2">
-      <form action="CourseDetail.php" method="post">
+      
         <div class="card" style="width: 18rem;">
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030103300</h5>
             <p class="card-text">Engineering Drawing</p>
             <input type="hidden" name="CourseID" value="030103300">
-            <button type="submit" class="btn" style="background-color: #F1BB93;">View</button>
+            <button type="submit" class="btn" style="background-color: #F1BB93;">
+            <i class="bi bi-search"></i>View</button>
           </div>
         </div>
-      </form>
+      
     </div>
         <div class="col-1">
 
@@ -73,7 +75,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">030513300</h5>
                   <p class="card-text">Computer Programming</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+            <button type="submit" class="btn" style="background-color: #F1BB93;">
+            <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -85,9 +89,13 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">040203111</h5>
                   <p class="card-text">Engineering Mathematics 1</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Engi Mathematics 2</a>
-                  
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID2" value="040203112"> 
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">Engi Mathematics 2</button>
+
+
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -99,9 +107,12 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">040313007</h5>
                   <p class="card-text">Physics 1</p>
+                  
                   <a href="#" class="btn"style="background-color: #F1BB93;">Physics 2</a>
                   
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -113,7 +124,9 @@
                   <h5 class="card-title fw-bold">040313006</h5>
                   <p class="card-text">Physics Laboratory 1</p>
                   <a href="#" class="btn"style="background-color: #F1BB93;">Physics Lab 2</a>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -125,7 +138,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">04XXXXXXX</h5>
                   <p class="card-text">Sci. and Math. Elective</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -138,7 +153,9 @@
                   <h5 class="card-title fw-bold">0801030XX</h5>
                   <p class="card-text">Language Elective Course 1</p>
                   
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -151,7 +168,9 @@
                   <h5 class="card-title fw-bold">0803035XX</h5>
                   <p class="card-text">Physical Education Elective</p>
                   
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -178,7 +197,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">030413100</h5>
                   <p class="card-text">Electric Circuit Analysis 1</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -190,7 +211,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">030513122</h5>
                   <p class="card-text">Discrete Mathematics</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -203,7 +226,9 @@
                   <h5 class="card-title fw-bold">040203112</h5>
                   <p class="card-text">Engineering Mathematics 2</p>
                   <a href="#" class="btn"style="background-color: #F1BB93;">Engi Mathematics 3</a>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -216,7 +241,9 @@
                   <h5 class="card-title fw-bold">040313007</h5>
                   <p class="card-text">Physics 2</p>
                   <a href="#" class="btn"style="background-color: #F1BB93;">Physics 3</a>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -228,7 +255,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">040313015</h5>
                   <p class="card-text">Physics Laboratory 2</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -241,7 +270,9 @@
                   <h5 class="card-title fw-bold">030513322</h5>
                   <p class="card-text">Object-Oriented Programming</p>
                   <a href="#" class="btn"style="background-color: #F1BB93;">Data Structure</a>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -253,8 +284,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">0801030XX</h5>
                   <p class="card-text">Language Elective Course 2</p>
-                  
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -266,8 +298,9 @@
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">0803035XX</h5>
                   <p class="card-text">Physical Education Elective</p>
-                  
-                  <a href="#" class="btn"style="background-color: #F1BB93;">View</a>
+                  <input type="hidden" name="CourseID" value="030103300">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
         </div>
@@ -287,12 +320,12 @@
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year1.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year3.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C60Year4.html">4</a></li>
+          <li class="page-item disabled"><a class="page-link" href="EnET-C60Year1.php">1</a></li>
+          <li class="page-item"><a class="page-link" href="EnET-C60Year2.php">2</a></li>
+          <li class="page-item"><a class="page-link" href="EnET-C60Year3.php">3</a></li>
+          <li class="page-item"><a class="page-link" href="EnET-C60Year4.php">4</a></li>
           <li class="page-item">
-            <a class="page-link" href="EnET-C60Year2.html" aria-label="Next">
+            <a class="page-link" href="EnET-C60Year2.php" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
@@ -302,6 +335,7 @@
     <div class="col-4"></div>
   </div>
 </div>
+</form>
    
 </body>
 </html>

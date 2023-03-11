@@ -1,10 +1,11 @@
 <?php
 // Establishing a database connection
-$host = "localhost";
-$user = "username";
-$password = "password";
-$database = "database_name";
-$conn = mysqli_connect($host, $user, $password, $database);
+$host = "noteapinun.trueddns.com";
+$dbport = "28502";
+$dbname = "se_db";
+$dbusername = "web";
+$dbpassword = "web1234";
+$conn = mysqli_connect($host, $dbusername, $dbpassword, $dbname, $dbport);
 
 // Handling the search request
 if(isset($_POST['search'])){

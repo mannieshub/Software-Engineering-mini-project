@@ -151,18 +151,19 @@ session_start();
 
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                            <div class="col-sm-4 col-12 text-center mb-2">
                                 <a href="homepage.php"></a>
-                                <button type="submit" class="btn fw-bold text-light" style="background-color: #F1BB93;">Login</button>
+                                <button type="submit" class="btn fw-bold text-light w-100" style="background-color: #F1BB93;">Login</button>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-                                <a href="register.php">
-                                    <button type="button" class="btn fw-bold text-light" style="background-color: #F1BB93;">Register</button>
-                                </a>
+                            <div class="col-sm-4 col-12 text-center mb-2">
+                                <button type="button" class="btn fw-bold text-light w-100" style="background-color: #F1BB93;">
+                                    <a href="register.php" style="color:inherit;text-decoration:none;">Register</a>
+                                </button>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+
+                            <div class="col-sm-4 col-12 text-center mb-2">
                                 <a href="homepage.php">
-                                    <button type="button" class="btn fw-bold text-light" style="background-color: #F1BB93;">Continue As Guest</button>
+                                    <button type="button" class="btn fw-bold text-light w-100" style="background-color: #F1BB93;">Guest</button>
                                 </a>
                             </div>
                         </div>

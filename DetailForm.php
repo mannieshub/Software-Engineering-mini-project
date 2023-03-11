@@ -46,7 +46,7 @@ session_start();
 </head>
 
 <body>
-
+<div id="navbar"></div>
     <div class="container">
         <div class="row">
             <div class="col-1"></div>
