@@ -49,7 +49,7 @@ session_start();
         echo $_POST['CourseID'];
     if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
         $CourseID = $_POST['CourseID'];
-        $newUrl = 'http://localhost/SE_Pro-/testDetailForm.php?CourseID=' . $CourseID;
+        $newUrl = 'http://noteapinun.trueddns.com:28501/SE_Pro-/testDetailForm.php?CourseID=' . $CourseID;
         unset($_POST['CourseID']);
         
         $host = "noteapinun.trueddns.com";
