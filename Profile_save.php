@@ -8,14 +8,9 @@ $dbpassword = "web1234";
 
 
 // establish database connection
-try {
-    $pdo = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-    die();
-}
 
+    $pdo = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);
+    
 $ss_stdid = $_SESSION['stdid'];
 $ss_name = $_SESSION["username"];
 $ss_email = $_SESSION["email"];
@@ -26,7 +21,7 @@ $email = $_POST["email"];
 $pwd = $_POST["pwd"];
 
 $shpwd = sha1($pwd);
-$sql = "SELECT * FROM studentdb where stdID = '$ss_stdID'";
+$sql = "SELECT * FROM studentdb where stdID = '$ss_stdid'";
 $result = $pdo->query($sql);
 // Check if the query returned any rows
 if ($result->rowCount() > 0) {
@@ -51,6 +46,7 @@ if ($result->rowCount() > 0) {
             $pdo->exec($sql3);
             $_SESSION["email"] = $email;
         }
+        $_SESSION["p_error"] = 0;
 
     } else {
         // Password is incorrect

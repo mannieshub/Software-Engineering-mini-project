@@ -49,6 +49,11 @@ session_start();
         echo $_POST['CourseID'];
     if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
         $CourseID = $_POST['CourseID'];
+<<<<<<< HEAD
+=======
+        $newUrl = 'http://noteapinun.trueddns.com:28501/SE_Pro-/testDetailForm.php?CourseID=' . $CourseID;
+        unset($_POST['CourseID']);
+>>>>>>> 5d742baed8d90d4954d35ff7b3a7a8b67be012d2
         
         $host = "noteapinun.trueddns.com";
         $dbport = "28502";
