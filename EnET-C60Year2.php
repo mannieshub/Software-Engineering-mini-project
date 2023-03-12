@@ -38,139 +38,174 @@
 </head>
 <body>
 <div id="navbar"></div>
-<form action="testDetailForm.php" method="post">
 <div class="container mt-4 ">
-
+  
     <div class="row mb-4">
       <div class="col-4"></div>
       <div class="col-4">
         <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;" >
           <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1 text-dark">ชั้นปีที่ 2 ภาคการศึกษาที่ 1</span>
+            <span class="navbar-brand mb-0 h1 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 1</span>
           </div>
         </nav>
       </div>
       <div class="col-4"></div>
+      </form>
     </div>
 
     <div class="row">
-       
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513100</h5>
-                  <p class="card-text">Engineering Electronics</p>
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
+    
+      <div class="col-2">
+        <form action="testDetailForm.php" method="post">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body" style="background-color:#F1EBCC ;">
+              <h5 class="card-title fw-bold">030103300</h5>
+              <p class="card-text">Engineering Drawing</p>
+              <input type="hidden" name="CourseID" value="030103300">
+              <button type="submit" class="btn" style="background-color: #F1BB93;">
+              <i class="bi bi-search"></i>View</button>
+            </div>
+          </div>
+        </form>
+      </div>
 
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513200</h5>
-                  <p class="card-text">Electronics Laboratory</p>
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
+      <div class="col-1"></div>
 
-        </div>
-        <div class="col-2">
+      <div class="col-2">
+        <form action="testDetailForm.php" method="post">
             <div class="card" style="width: 18rem;">
                 <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">040203211</h5>
-                  <p class="card-text">Engineering Mathematics 2</p>
-                  
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Engineer Math 3</a>
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513220</h5>
-                  <p class="card-text">Electronics Practice 1</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Elec- Practice 2</a>
-                  
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513334</h5>
-                  <p class="card-text">Digital Circuit and Logic Design</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Microcontroller</a>
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513326</h5>
-                  <p class="card-text">Data Structure and Algorithm</p>
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">08XXXXXXX</h5>
-                  <p class="card-text">General Education Elective</p>
-                  
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">08XXXXXXX</h5>
-                  <p class="card-text">Social and Human Elective</p>
-                  
-                  <input type="hidden" name="CourseID" value="030103300">
+                  <h5 class="card-title fw-bold">030513900</h5>
+                  <p class="card-text">Computer Programming</p>
+                  <input type="hidden" name="CourseID" value="030513900">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
                 </div>
             </div>
+        </form>
+      </div>
+
+      <div class="col-1"></div>   
+      <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">040203111</h5>
+                  <p class="card-text">Engineering Mathematics 1</p>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040203112">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">Engineer Math 2</button>
+                  </form>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040313006">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+      
+      
+      <div class="col-1"></div>   
+
+      <div class="col-2">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body" style="background-color:#F1EBCC ;">
+              <h5 class="card-title fw-bold">040313005</h5>
+                <p class="card-text">Physics 1</p>
+                
+                
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="040313007"> 
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">Physics2</button>
+                </from>
+
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="040313005">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <i class="bi bi-search"></i>View</button>
+                </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-4">
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">040313006</h5>
+                  <p class="card-text">Physics Laboratory 1</p>
+                  
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040313015">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>Physics Lab 2</button>
+                  </form>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040313006">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="col-2"> <!---ไม่มีข้อมูลในระบบ--->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">04XXXXXXX</h5>
+                  <p class="card-text">Sci. and Math. Elective</p>
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="04XXXXXXX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1">
+
+        </div>
+        <div class="col-2"><!---ไม่มีข้อมูลในระบบ--->
+          
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">0801030XX</h5>
+                  <p class="card-text">Language Elective Course 1</p>
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="0801030XX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+        <div class="col-1">
+
+        </div>
+        <div class="col-2"><!---ไม่มีข้อมูลในระบบ--->
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">0803035XX</h5>
+                  <p class="card-text">Physical Education Elective</p>
+                  
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="0803035XX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+              </div>
         </div>
     </div>
+  
 </div>
 
 <div class="container mt-4 ">
@@ -179,7 +214,7 @@
     <div class="col-4">
       <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 2 ภาคการศึกษาที่ 2</span>
+          <center><span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 2</span></center>
         </div>
       </nav>
     </div>
@@ -190,14 +225,51 @@
         <div class="col-2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513123</h5>
-                  <p class="card-text">Data Communication</p>
+                  <h5 class="card-title fw-bold">030413100</h5>
+                  <p class="card-text">Electric Circuit Analysis 1</p>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="030413100">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">030513122</h5>
+                  <p class="card-text">Discrete Mathematics</p>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="030513122">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-2">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">040203112</h5>
+                  <p class="card-text">Engineering Mathematics 2</p>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040203211">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">Engineer Math 3</button>
+                  </form>
                   
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Computer Network</a>
-          
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040203112">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
                 </div>
               </div>
         </div>
@@ -207,44 +279,16 @@
         <div class="col-2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513333</h5>
-                  <p class="card-text">Database and Data Technology</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Web Application</a>
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
-        </div>
-        <div class="col-1">
+                  <h5 class="card-title fw-bold">040313007</h5>
+                  <p class="card-text">Physics 2</p>
 
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513352</h5>
-                  <p class="card-text">Artificial Intelligence</p>
-                  
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040313007">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
                 </div>
-              </div>
-        </div>
-        <div class="col-1">
-
-        </div>
-        <div class="col-2">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513221</h5>
-                  <p class="card-text">Electronics Laboratory 2</p>
-              
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </div>
-              </div>
+            </div>
         </div>
     </div>
     <div class="row mt-4">
@@ -252,15 +296,14 @@
         <div class="col-2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">030513335</h5>
-                  <p class="card-text">Microcontroller Systems</p>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">C-Architecture</a>
-                  <a href="#" class="btn"style="background-color: #F1BB93;">Embed-CS</a>
-                  <a href="#" class="btn mt-3"style="background-color: #F1BB93;">C- Practice 1</a>
+                  <h5 class="card-title fw-bold">040313015</h5>
+                  <p class="card-text">Physics Laboratory 2</p>
 
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn mt-3" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040313015">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
                 </div>
               </div>
         </div>
@@ -270,11 +313,19 @@
         <div class="col-2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">08010301X</h5>
-                  <p class="card-text">Language Elective Course 3</p>
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
+                  <h5 class="card-title fw-bold">030513322</h5>
+                  <p class="card-text">Object-Oriented Programming</p>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="030513326">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">Data Structure</button>
+                  </form>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="030513322">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
                 </div>
               </div>
         </div>
@@ -284,23 +335,37 @@
         <div class="col-2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">08XXXXXXX</h5>
-                  <p class="card-text">General Education Elective</p>
-                 
-                  <input type="hidden" name="CourseID" value="030103300">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
+                  <h5 class="card-title fw-bold">0801030XX</h5>
+                  <p class="card-text">Language Elective Course 2</p>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="0801030XX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="col-1">
 
         </div>
         <div class="col-2">
-            
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">0803035XX</h5>
+                  <p class="card-text">Physical Education Elective</p>
+
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="0803035XX">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 
 <div class="container mt-4 ">
   <div class="row">
