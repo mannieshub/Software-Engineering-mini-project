@@ -40,7 +40,6 @@
 <body>
   <div id="navbar"></div>
   <div class="container mt-4 ">
-<<<<<<< HEAD
       <div class="row mb-4">
         <div class="col-4"></div>
         <div class="col-4">
@@ -49,15 +48,6 @@
               <span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 3 ภาคการศึกษาที่ 1</span>
             </div>
           </nav>
-=======
-  
-  <div class="row mb-4">
-    <div class="col-4"></div>
-    <div class="col-4">
-      <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;" >
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 1</span>
->>>>>>> 809e8587147e8772ee7eac2d3e9abbb0b33f0a97
         </div>
       </nav>
     </div>
