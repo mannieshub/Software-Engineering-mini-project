@@ -46,7 +46,7 @@ session_start();
 <body>
 <div id="navbar"></div>
     <?php
-        echo $_POST['CourseID'];
+        //echo $_POST['CourseID'];
     if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
         $CourseID = $_POST['CourseID'];
         $newUrl = 'http://noteapinun.trueddns.com:28501/SE_Pro-/testDetailForm.php?CourseID=' . $CourseID;
@@ -120,7 +120,7 @@ session_start();
                             ?></h5>
                         </div>
                         <div class="card-subtitle">
-                            <p>&nbsp;&nbsp;<?= "--" ?></p>
+                            <p>&nbsp;&nbsp;<?= "" ?></p>
                         </div>
                     </div>
                     <div class="card-footer bg-white">
@@ -132,7 +132,7 @@ session_start();
                         </button>
                         <div class="collapse" id="id<?= $row['0'] ?>-2"> <!-- Comment loop fetch -->
                             <?php
-                            $result = $conn->query("SELECT c.* , u.name FROM comment c , user u WHERE c.user_id = u.id AND c.post_id = " . $row['0'] . ";");
+                            $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $row['0'] . ";");
 
                             foreach ($result as $row1) {
 
