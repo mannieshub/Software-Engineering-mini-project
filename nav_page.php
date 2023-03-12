@@ -77,7 +77,7 @@ else{
                     <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="EnET-C60Year1.php">EnET-C 60</a>
                 </li>
                 <li class="nav-item me-lg-2 mb-2">
-                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="EnET-C65Year1.html">EnET-C 60</a>
+                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="EnET-C65Year1.html">EnET-C 65</a>
                 </li>
             </ul>
         </div>
@@ -100,6 +100,7 @@ else{
                 <?php } else { ?>
                 <li><a class="dropdown-item" href="Profile.php">Edit Profile</a></li>
                 <li><a class="dropdown-item" href="Report.php">Report a Problem</a></li>
+                <li><a class="dropdown-item" href="Ch_pwd.php">Change Password</a></li>
                 <li><a class="dropdown-item" href="logout.php">Logout</a></li>
                 <?php } ?>
             </ul>
