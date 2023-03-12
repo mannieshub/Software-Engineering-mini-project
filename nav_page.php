@@ -40,7 +40,7 @@ else{
       color: white;
     }
     .navbar-brand:hover {
-      color: blue;
+      color: #924D3C;
     }
     .navbar-toggler-icon {
       color: white;
@@ -49,7 +49,7 @@ else{
       color: white;
     }
     .nav-link:hover {
-      color: blue;
+      color: #924D3C;
     }
     
     
