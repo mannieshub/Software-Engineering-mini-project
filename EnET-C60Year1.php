@@ -59,7 +59,6 @@
       margin-left: 200px;
       padding: 20px;
     }
-    
   </style>
   <script>
     $(function() {
