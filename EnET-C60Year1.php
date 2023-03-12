@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnET C-60 Year 1</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -45,9 +46,9 @@
     <div class="row mb-4">
       <div class="col-4"></div>
       <div class="col-4">
-        <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;" >
+        <nav class="navbar rounded-start rounded-end bg-card-primary">
           <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 1</span>
+            <span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 1</span>
           </div>
         </nav>
       </div>
@@ -58,7 +59,7 @@
     <div class="col-2">
       
         <div class="card" style="width: 18rem;">
-          <div class="card-body" style="background-color:#F1EBCC ;">
+          <div class="card-body bg-card-primary-2">
             <h5 class="card-title fw-bold">030103300</h5>
             <p class="card-text">Engineering Drawing</p>
             <input type="hidden" name="CourseID" value="030103300">
@@ -73,7 +74,7 @@
         </div>
         <div class="col-2">
             <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
+              <div class="card-body bg-card-primary-2">
                   <h5 class="card-title fw-bold">030513300</h5>
                   <p class="card-text">Computer Programming</p>
                   <input type="hidden" name="CourseID" value="030513300">
@@ -87,7 +88,7 @@
         </div>
         <div class="col-2">
             <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
+              <div class="card-body bg-card-primary-2">
                   <h5 class="card-title fw-bold">040203111</h5>
                   <p class="card-text">Engineering Mathematics 1</p>
                   <input type="hidden" name="CourseID2" value="040203112"> 
@@ -105,7 +106,7 @@
         </div>
         <div class="col-2">
             <div class="card" style="width: 18rem;">
-                <div class="card-body" style="background-color:#F1EBCC ;">
+              <div class="card-body bg-card-primary-2">
                   <h5 class="card-title fw-bold">040313007</h5>
                   <p class="card-text">Physics 1</p>
                   
