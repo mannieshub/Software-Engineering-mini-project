@@ -100,7 +100,7 @@
                   </form>
 
                   <form action="testDetailForm.php" method="post">
-                    <input type="hidden" name="CourseID" value="040313006">
+                    <input type="hidden" name="CourseID" value="040203111">
                     <button type="submit" class="btn" style="background-color: #F1BB93;">
                     <i class="bi bi-search"></i>View</button>
                   </form>
@@ -112,25 +112,25 @@
       <div class="col-1"></div>   
 
       <div class="col-2">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body" style="background-color:#F1EBCC ;">
-              <h5 class="card-title fw-bold">040313005</h5>
-                <p class="card-text">Physics 1</p>
-                
-                
-                <form action="testDetailForm.php" method="post">
-                  <input type="hidden" name="CourseID" value="040313007"> 
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">Physics2</button>
-                </from>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">040313005</h5>
+                  <p class="card-text">Physics 1</p>
+                  
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040313007">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>Physics 2</button>
+                  </form>
 
-                <form action="testDetailForm.php" method="post">
-                  <input type="hidden" name="CourseID" value="040313005">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                </form>
+                  <form action="testDetailForm.php" method="post">
+                    <input type="hidden" name="CourseID" value="040313005">
+                    <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                  </form>
+                </div>
             </div>
-          </div>
-      </div>
+        </div>
     </div>
 
 
