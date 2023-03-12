@@ -144,7 +144,7 @@
                   <form action="testDetailForm.php" method="post">
                     <input type="hidden" name="CourseID" value="040313015">
                     <button type="submit" class="btn" style="background-color: #F1BB93;">
-                    <i class="bi bi-search"></i>Physics Lab 2</button>
+                    Physics Lab 2</button>
                   </form>
 
                   <form action="testDetailForm.php" method="post">
