@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once 'db_connect.php';
+
 $stdID = $_SESSION['stdid'];
 $user = $_SESSION["username"];
 $email = $_SESSION["email"];
@@ -71,33 +71,67 @@ $email = $_SESSION["email"];
       <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
+          <?php
+          if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 1){
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    New password and confirm password don\'t match
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>';
+            unset($_SESSION["p_error"]);
+        }else if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 2){
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Current password is incorrect
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>';
+            unset($_SESSION["p_error"]);
+        }else if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 0){
+          echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                  Success
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>';
+          unset($_SESSION["p_error"]);
+      }else if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 3){
+        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  New password is same as current password
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>';
+        unset($_SESSION["p_error"]);
+      }
+          ?>
           <div class="card text-dark bg-white border-primary">
-            <div class="card-header bg-primary text-white ">Edit Profile</div>
+            <div class="card-header bg-primary text-white ">Change Password</div>
             <div class="card-body">
               <div class="row mb-3 ">
-                <label class="col-md-3 col-form-label">Name :</label>
-                <div class="col-md-9">
-                  <input type="text" class="form-control" name="Name" required value="<?php echo $user ?>">
-                </div>
-              </div>
+                
               <div class="row mb-3 ">
-                <label class="col-md-3 col-form-label">Student ID :</label>
-                <div class="col-md-9">
-                  <input type="text" class="form-control" name="stdid" required value="<?php echo $stdID ?>">
-                </div>
-              </div>
-
-              <div class="row mb-3">
-                <label class="col-md-3 col-form-label">Email :</label>
-                <div class="col-md-9">
-                  <input type="email" class="form-control" name="email" required value="<?php echo $email ?>">
-                </div>
-              </div>
-              <div class="row mb-3 ">
-                <label class="col-md-3 col-form-label">Password :</label>
+                <label class="col-md-3 col-form-label">Current Password :</label>
                 <div class="col-md-9">
                   <div class="input-group">
-                    <input type="password" class="form-control" name="pwd" required id="password">
+                    <input type="password" class="form-control" name="current_password" required id="password">
+                    <span class="input-group-text " onclick="password_show_hide();">
+                      <i class="bi bi-eye-fill" id="show_eye"></i>
+                      <i class="bi bi-eye-slash-fill d-none" id="hide_eye"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3 ">
+                <label class="col-md-3 col-form-label">New Password :</label>
+                <div class="col-md-9">
+                  <div class="input-group">
+                    <input type="password" class="form-control" name="new_password" required id="password">
+                    <span class="input-group-text " onclick="password_show_hide();">
+                      <i class="bi bi-eye-fill" id="show_eye"></i>
+                      <i class="bi bi-eye-slash-fill d-none" id="hide_eye"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3 ">
+                <label class="col-md-3 col-form-label">Confirm Password :</label>
+                <div class="col-md-9">
+                  <div class="input-group">
+                    <input type="password" class="form-control" name="confirm_new_password" required id="password">
                     <span class="input-group-text " onclick="password_show_hide();">
                       <i class="bi bi-eye-fill" id="show_eye"></i>
                       <i class="bi bi-eye-slash-fill d-none" id="hide_eye"></i>
@@ -110,8 +144,8 @@ $email = $_SESSION["email"];
               <div class="row mb-3">
                 <div class="col-1"></div>
                 <div class="col-md-10 d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary btn-sm bi bi-save w-50 me-5"> Save </button>
-                  <a href="Ch_pwd.php" class="btn btn-danger btn-sm  w-50"> Change Password </a>
+                  <button type="submit" class="btn btn-primary btn-sm bi bi-save w-75"> Save </button>
+                  
                 </div>
                 <div class="col-1"></div>
               </div>
