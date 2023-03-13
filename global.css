@@ -12,3 +12,32 @@
     background: #F1EBCC !important;
 }
 
+.color-1 {
+    background: #924D3C; /*hover*/
+}
+
+.color-green {
+    background: #9AA374;
+
+}
+
+.color-green2 {
+    background: #DBD4C1;
+
+}
+
+.color-pink {
+    background: #913b4f;
+}
+
+.color-pink2 {
+    background: #D5B6B9;
+}
+
+.color-blue {
+    background: #4E7286;
+}
+
+.color-blue {
+    background: #9AB4BA;
+}
