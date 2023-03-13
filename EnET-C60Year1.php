@@ -34,6 +34,16 @@
       padding: 20px;
 
     }
+
+    .navbar.rounded-start {
+      height: 60px;
+    }
+
+    .navbar-brand.text-dark {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   </style>
   <script>
     $(function() {
@@ -259,7 +269,7 @@
       <div class="col-4">
         <nav class="navbar rounded-start rounded-end " style="background-color: #F1BB93;">
           <div class="container-fluid">
-            <center><span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 2</span></center>
+            <span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 2</span>
           </div>
         </nav>
       </div>
@@ -395,74 +405,74 @@
 
           <div class="col col-12">
             <form action="testDetailForm.php" method="post">
-            <div class="card h-100">
-              <div class="card-body" style="background-color:#F1EBCC ;">
-                <h5 class="card-title fw-bold">0801030XX</h5>
-                <p class="card-text">Language Elective Course 2</p>
-                <div class="d-flex justify-content-between align-items-end mt-3">
-                
-                  <input type="hidden" name="CourseID" value="0801030XX">
-                  <div class="ms-auto">
-                    <button type="submit" class="btn" style="background-color: #F1BB93;">
-                      <i class="bi bi-search"></i>View
-                    </button>
+              <div class="card h-100">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">0801030XX</h5>
+                  <p class="card-text">Language Elective Course 2</p>
+                  <div class="d-flex justify-content-between align-items-end mt-3">
+
+                    <input type="hidden" name="CourseID" value="0801030XX">
+                    <div class="ms-auto">
+                      <button type="submit" class="btn" style="background-color: #F1BB93;">
+                        <i class="bi bi-search"></i>View
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
-        </div>
+            </form>
+          </div>
 
           <div class="col col-12">
             <form action="testDetailForm.php" method="post">
-            <div class="card h-100">
-              <div class="card-body" style="background-color:#F1EBCC ;">
-                <h5 class="card-title fw-bold">0803035XX</h5>
-                <p class="card-text">Physical Education Elective</p>
-                <div class="d-flex justify-content-between align-items-end mt-3">
-                
-                  <input type="hidden" name="CourseID" value="0803035XX">
-                  <div class="ms-auto">
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">
-                    <i class="bi bi-search"></i>View</button>
-                    
+              <div class="card h-100">
+                <div class="card-body" style="background-color:#F1EBCC ;">
+                  <h5 class="card-title fw-bold">0803035XX</h5>
+                  <p class="card-text">Physical Education Elective</p>
+                  <div class="d-flex justify-content-between align-items-end mt-3">
+
+                    <input type="hidden" name="CourseID" value="0803035XX">
+                    <div class="ms-auto">
+                      <button type="submit" class="btn" style="background-color: #F1BB93;">
+                        <i class="bi bi-search"></i>View</button>
+
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
-        </div>
-
-
-
-        <div class="container mt-4 ">
-          <div class="row">
-            <div class="col col-4">
-
-            </div>
-            <div class="col col-4">
-              <div aria-label="Page navigation example">
-                <ul class="pagination justify-content-center pagination-lg">
-                  <li class="page-item">
-                    <a class="page-link disabled" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item disabled"><a class="page-link" href="EnET-C60Year1.php">1</a></li>
-                  <li class="page-item"><a class="page-link" href="EnET-C60Year2.php">2</a></li>
-                  <li class="page-item"><a class="page-link" href="EnET-C60Year3.php">3</a></li>
-                  <li class="page-item"><a class="page-link" href="EnET-C60Year4.php">4</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="EnET-C60Year2.php" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col col-4"></div>
+            </form>
           </div>
-        </div>
+
+
+
+          <div class="container mt-4 ">
+            <div class="row">
+              <div class="col col-4">
+
+              </div>
+              <div class="col col-4">
+                <div aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center pagination-lg">
+                    <li class="page-item">
+                      <a class="page-link disabled" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item disabled"><a class="page-link" href="EnET-C60Year1.php">1</a></li>
+                    <li class="page-item"><a class="page-link" href="EnET-C60Year2.php">2</a></li>
+                    <li class="page-item"><a class="page-link" href="EnET-C60Year3.php">3</a></li>
+                    <li class="page-item"><a class="page-link" href="EnET-C60Year4.php">4</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="EnET-C60Year2.php" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col col-4"></div>
+            </div>
+          </div>
 
 </body>
 
