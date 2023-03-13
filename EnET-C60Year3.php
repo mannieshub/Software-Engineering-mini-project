@@ -177,15 +177,17 @@
         <div class="card-body" style="background-color:#F1EBCC ;">
           <h5 class="card-title fw-bold">08XXXXXXX</h5>
           <p class="card-text">General Education Elective Course</p>
-          <form action="testDetailForm.php" method="post">
+
+          <form action="Elective-Course.php" method="post">
             <div class="d-flex justify-content-between align-items-end mt-3">
-              <input type="hidden" name="CourseID" value="08XXXXXXX">
+              <input type="hidden" name="CourseID" value="0802039XX">
               <div class="ms-auto">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
               </div>
             </div>
           </form>
+          
         </div>
       </div>
     </div>
