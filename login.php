@@ -12,10 +12,11 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="navbar.css">
-  
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <style>
-     
+    <script>
         function password_show_hide() {
             let x = document.getElementById("password");
             let show_eye = document.getElementById("show_eye");
@@ -34,6 +35,11 @@ session_start();
     </script>
 </head>
 <style>
+    * {
+
+        font-family: 'Prompt', sans-serif !important;
+    }
+
     body {
         background:
             #EDDCBC
@@ -50,8 +56,8 @@ session_start();
     }
 
     #lable {
-        font-family: 'Inter';
-        font-style: normal;
+
+
         color: #000000;
     }
 
@@ -59,8 +65,8 @@ session_start();
 
 
 
-        font-family: 'Inter';
-        font-style: normal;
+
+
         font-weight: 700;
         font-size: 64px;
         line-height: 77px;
@@ -73,8 +79,8 @@ session_start();
 
 
 
-        font-family: 'Inter';
-        font-style: normal;
+
+
         font-weight: 50;
         font-size: 40px;
         line-height: 77px;
@@ -85,8 +91,8 @@ session_start();
     }
 
     .l3 {
-        font-family: 'Inter';
-        font-style: normal;
+
+
         font-weight: 700;
         font-size: 96px;
         line-height: 116px;
@@ -154,17 +160,17 @@ session_start();
                         <div class="row justify-content-center">
                             <div class="col-sm-4 col-12 text-center mb-2">
                                 <a href="homepage.php"></a>
-                                <button type="submit" class="btn fw-bold text-light w-100" style="background-color: #F1BB93;">Login</button>
+                                <button type="submit" class="btn fw-bold text-light w-auto" style="background-color: #F1BB93;">Login</button>
                             </div>
                             <div class="col-sm-4 col-12 text-center mb-2">
-                                <button type="button" class="btn fw-bold text-light w-100" style="background-color: #F1BB93;">
+                                <button type="button" class="btn fw-bold text-light w-auto" style="background-color: #F1BB93;">
                                     <a href="register.php" style="color:inherit;text-decoration:none;">Register</a>
                                 </button>
                             </div>
 
                             <div class="col-sm-4 col-12 text-center mb-2">
                                 <a href="homepage.php">
-                                    <button type="button" class="btn fw-bold text-light w-100" style="background-color: #F1BB93;">Guest</button>
+                                    <button type="button" class="btn fw-bold text-light w-auto" style="background-color: #F1BB93;">Guest</button>
                                 </a>
                             </div>
                         </div>
