@@ -52,7 +52,7 @@
       <div class="col-4">
         <nav class="navbar rounded-start rounded-end" style="background-color: #F1BB93;">
           <div class="container-fluid">
-            <p class="navbar-brand mb-0  text-dark ">ชั้นปีที่ 1 ภาคการศึกษาที่ 1</p>
+            <p class="navbar-brand mb-0  text-dark ">ชั้นปีที่ 1 ภาคการศึกษาที่ 1 | 20 หน่วยกิต</p>
           </div>
         </nav>
       </div>
@@ -210,7 +210,7 @@
 
 
         <div class="col col-12"><!---ไม่มีข้อมูลในระบบ--->
-          <form action="testDetailForm.php" method="post">
+          <form action="Elective-Course.php" method="post">
             <div class="card h-100">
               <div class="card-body" style="background-color:#F1EBCC ;">
                 <h5 class="card-title fw-bold">0801030XX</h5>
@@ -233,7 +233,7 @@
 
         <div class="col col-12">
           <!---ไม่มีข้อมูลในระบบ--->
-          <form action="testDetailForm.php" method="post">
+          <form action="Elective-Course.php" method="post">
             <div class="card h-100">
               <div class="card-body" style="background-color:#F1EBCC ;">
                 <h5 class="card-title fw-bold">0803035XX</h5>
@@ -259,7 +259,7 @@
       <div class="col-4">
         <nav class="navbar rounded-start rounded-end " style="background-color: #F1BB93;">
           <div class="container-fluid">
-            <center><span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 1 ภาคการศึกษาที่ 2</span></center>
+            <span class="navbar-brand mb-0 text-dark" style="text-align: center;">ชั้นปีที่ 1 ภาคการศึกษาที่ 2</span>
           </div>
         </nav>
       </div>
