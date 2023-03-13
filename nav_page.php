@@ -77,7 +77,7 @@ else{
                     <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="EnET-C60Year1.php">EnET-C 60</a>
                 </li>
                 <li class="nav-item me-lg-2 mb-2">
-                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="EnET-C65Year1.html">EnET-C 65</a>
+                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="EnET-C65Year1.php">EnET-C 65</a>
                 </li>
             </ul>
         </div>

@@ -30,6 +30,15 @@
         margin-left: 200px;
         padding: 20px;
         }
+        .navbar.rounded-start {
+      height: 60px;
+    }
+
+    .navbar-brand.text-dark {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
     </style>
     <script>
       $(function(){
@@ -43,9 +52,9 @@
           <a class="navbar-brand fw-bold text-light fs-3" href="https://cit.kmutnb.ac.th/">CIT</a>
             <div class="col-3">
                 <div class="btn-group">
-                    <a href="homepage.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light" aria-current="page">MainPage</a>
-                    <a href="EnET60.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 60</a>
-                    <a href="EnET65.html" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 65</a>
+                    <a href="homepage.php" style= "background-color: #F1BB93;"class="btn fw-bold text-light" aria-current="page">MainPage</a>
+                    <a href="EnET60.php" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 60</a>
+                    <a href="EnET65.php" style= "background-color: #F1BB93;"class="btn fw-bold text-light">EnET-C 65</a>
                   </div>
 
           
@@ -65,7 +74,7 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Edit Profile</a></li>
                       <li><a class="dropdown-item" href="#">Report a Problem</a></li>
-                      <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                      <li><a class="dropdown-item" href="login.php">Logout</a></li>
                     </ul>
                   </div>
             </div>
@@ -78,7 +87,7 @@
       <div class="col-4">
         <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;" >
           <div class="container-fluid">
-            <span class="navbar-brand mb-0 fw-bold">ชั้นปีที่ 3 เทอม 1</span>
+          <span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 3 ภาคการศึกษาที่ 1</span>
           </div>
         </nav>
       </div>
@@ -192,7 +201,7 @@
     <div class="col-4">
       <nav class="navbar rounded-start rounded-end"style="background-color: #F1BB93;">
         <div class="container-fluid">
-          <center><span class="navbar-brand mb-0 fw-bold">ชั้นปีที่ 3 เทอมที่ 2</span></center>
+        <span class="navbar-brand mb-0 text-dark">ชั้นปีที่ 3 ภาคการศึกษาที่ 2</span>
         </div>
       </nav>
     </div>
@@ -325,10 +334,10 @@
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item"><a class="page-link" href="EnET-C65Year1.html">1</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C65Year2.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C65Year3.html">3</a></li>
-          <li class="page-item"><a class="page-link" href="EnET-C65Year4.html">4</a></li>
+          <li class="page-item"><a class="page-link" href="EnET-C65Year1.php">1</a></li>
+          <li class="page-item"><a class="page-link" href="EnET-C65Year2.php">2</a></li>
+          <li class="page-item"><a class="page-link" href="EnET-C65Year3.php">3</a></li>
+          <li class="page-item"><a class="page-link" href="EnET-C65Year4.php">4</a></li>
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
