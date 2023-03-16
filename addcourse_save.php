@@ -22,7 +22,7 @@ try {
     $stmt->execute();
 
     $_SESSION['add_post'] = 'success';
-    header("Location: Report.php");
+    header("Location:addcourse.php");
     die();
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();

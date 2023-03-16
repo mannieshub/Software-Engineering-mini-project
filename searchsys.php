@@ -28,8 +28,3 @@ if(isset($_POST['search'])){
   <input type="text" name="search" placeholder="Search...">
   <button type="submit">Go</button>
 </form>
-
-SELECT * FROM table1
-INNER JOIN table2 ON table1.id = table2.table1_id
-WHERE table1.field1 LIKE '%search_term%' OR table2.field2 LIKE '%search_term%';
-

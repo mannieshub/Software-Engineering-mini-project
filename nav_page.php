@@ -59,7 +59,7 @@ else{
   
   <nav class="navbar navbar-expand-lg ">
     <div class="container">
-        <a class="navbar-brand fw-bold fs-2" href="https://cit.kmutnb.ac.th/">CIT</a>
+        <a class="navbar-brand btn fw-bold fs-2" href="https://cit.kmutnb.ac.th/">CIT</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,7 +70,7 @@ else{
                 </li>
                 <?php if($ro != ""){ ?>
                 <li class="nav-item me-lg-2 mb-2">
-                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="#">Add Course</a>
+                    <a class="btn fw-bold nav-link" style= "background-color: #F1BB93;" href="addcourse.php">Add Course</a>
                 </li>
                 <?php } ?>
                 <li class="nav-item me-lg-2 mb-2">
