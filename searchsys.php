@@ -1,35 +1,47 @@
 <?php
-// Establishing a database connection
+// define database connection parameters
 $host = "noteapinun.trueddns.com";
 $dbport = "28502";
 $dbname = "se_db";
 $dbusername = "web";
 $dbpassword = "web1234";
-$conn = mysqli_connect($host, $dbusername, $dbpassword, $dbname, $dbport);
 
-// Handling the search request
-if(isset($_POST['search'])){
-  $search_term = mysqli_real_escape_string($conn, $_POST['search']);
-  $query = "SELECT * FROM table_name WHERE column_name LIKE '%{$search_term}%'";
-  $result = mysqli_query($conn, $query);
-  if(mysqli_num_rows($result) > 0){
-    // Displaying the search results
-    while($row = mysqli_fetch_assoc($result)){
-      echo "ID: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
+// create database connection
+$conn = new mysqli($host, $dbusername, $dbpassword, $dbname, $dbport);
+
+
+
+// get search option and search term from POST data
+
+$search_term = $_POST['sbar'];
+echo "Search : " . $_POST['sbar']. "<br>";
+// escape search term to prevent SQL injection
+$search_term = mysqli_real_escape_string($conn, $search_term);
+
+// build SQL query based on search option
+
+    $sql = "SELECT * FROM teacherdb WHERE ShortName LIKE '%$search_term%' OR TName LIKE '%$search_term%'";
+
+    $sql1 = "SELECT * FROM coursedb WHERE CourseID LIKE '%$search_term%' OR CourseName LIKE '%$search_term%'";
+
+// execute SQL query and get results
+$result = $conn->query($sql);
+$result1 = $conn->query($sql1);
+// output search results
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+
+          echo  $row["ShortName"]. " - " . $row["TName"]. "<br>";
+
     }
-  } else {
-    echo "No results found.";
+} else if ($result1->num_rows > 0) {
+  while($row = $result1->fetch_assoc()) {
+  echo $row["CourseID"]. " - " . $row["CourseName"]. "<br>";
+
   }
+}else{
+    echo "0 results";
 }
-?>
 
-<!-- HTML form with a search bar -->
-<form action="" method="post">
-  <input type="text" name="search" placeholder="Search...">
-  <button type="submit">Go</button>
-</form>
-
-SELECT * FROM table1
-INNER JOIN table2 ON table1.id = table2.table1_id
-WHERE table1.field1 LIKE '%search_term%' OR table2.field2 LIKE '%search_term%';
-
+// close database connection
+$conn->close();
