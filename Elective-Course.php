@@ -62,7 +62,7 @@ session_start();
         $conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);}
         
     ?>
-    <div class="container">
+    "<div class="container">
         <div class="row">
             <div class="col-1"></div>
             <div class="col-10">
@@ -202,6 +202,5 @@ session_start();
             </div>
             <div class="col-1"></div>
         </div>
-        
 </body>
 </html>
