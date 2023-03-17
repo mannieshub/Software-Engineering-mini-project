@@ -14,7 +14,8 @@ $sql = "INSERT INTO coursecomment(CComment,PostDate,stdID,CourseID) VALUES
 $conn->exec($sql);
 
 // Send the CourseID value back to the testDetailForm.php page as a POST parameter
-$_POST['CourseID'] = $post_id;
+       // $_POST['CourseID'] = $post_id;
+       $_SESSION['CourseID'] = $post_id;
 
 header("location: testDetailForm.php");
 $conn = null;

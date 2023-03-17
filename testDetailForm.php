@@ -48,12 +48,18 @@ session_start();
 <body>
     <div id="navbar"></div>
     <?php
-    echo $_POST['CourseID'];
-    if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
-        $CourseID = $_POST['CourseID'];
+    //echo $_POST['CourseID'];
+    if (isset($_POST['CourseID']) && !empty($_POST['CourseID']) || isset($_SESSION['CourseID']) && !empty($_SESSION['CourseID'])) {
+        if(isset($_POST['CourseID']) && !empty($_POST['CourseID'])){
+            $CourseID = $_POST['CourseID'];}
+        else{
+            $CourseID = $_SESSION['CourseID'];
+        }
+        
+        
 
         $newUrl = 'http://noteapinun.trueddns.com:28501/SE_Pro-/testDetailForm.php?CourseID=' . $CourseID;
-        unset($_POST['CourseID']);
+        //unset($_POST['CourseID']);
 
 
         $host = "noteapinun.trueddns.com";
