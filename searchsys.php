@@ -20,9 +20,9 @@ $search_term = mysqli_real_escape_string($conn, $search_term);
 
 // build SQL query based on search option
 
-    $sql = "SELECT * FROM teacherdb WHERE ShortName LIKE '%$search_term%' OR TName LIKE '%$search_term%'";
+    $sql = "SELECT * FROM teacherdb WHERE ShortName LIKE '%$search_term%' OR TName LIKE '$search_term%'";
 
-    $sql1 = "SELECT * FROM coursedb WHERE CourseID LIKE '%$search_term%' OR CourseName LIKE '%$search_term%'";
+    $sql1 = "SELECT * FROM coursedb WHERE CourseID LIKE '%$search_term%' OR CourseName LIKE '$search_term%'";
 
 // execute SQL query and get results
 $result = $conn->query($sql);

@@ -51,12 +51,16 @@ session_start();
     //echo $_POST['CourseID'];
     if (isset($_POST['CourseID']) && !empty($_POST['CourseID']) || isset($_SESSION['CourseID']) && !empty($_SESSION['CourseID'])) {
         if(isset($_POST['CourseID']) && !empty($_POST['CourseID'])){
-            $CourseID = $_POST['CourseID'];}
+            $CourseID = $_POST['CourseID'];
+            unset($_POST['CourseID']);
+        }
+            
         else{
             $CourseID = $_SESSION['CourseID'];
+            unset($_SESSION['CourseID']);
         }
         
-        
+
 
         $newUrl = 'http://noteapinun.trueddns.com:28501/SE_Pro-/testDetailForm.php?CourseID=' . $CourseID;
         //unset($_POST['CourseID']);
@@ -238,7 +242,7 @@ session_start();
             $stmt1 = $conn->prepare($sql1);
 
             // bind parameters to prepared statements
-            $search_term = "%$search_term%";
+            $search_term = "$search_term%";
             $stmt->bindParam(':search_term', $search_term, PDO::PARAM_STR);
             $stmt1->bindParam(':search_term', $search_term, PDO::PARAM_STR);
 
