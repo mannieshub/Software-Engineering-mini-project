@@ -150,7 +150,7 @@ $(document).ready(function() {
     </div>
     <div class="mx-3">
     
-    <form class="d-flex" role="search" id="search-form">
+    <form class="d-flex" role="search" id="search-form" action="testDetailForm.php" method="post">
         <div class="input-group">
           <input class="form-control" type="search" placeholder="ค้นหาวิชาหรืออาจารย์" aria-label="Search" name="sbar" id="search-input">
           <button class="btn btn-outline-light" style="background-color: #F1BB93;" type="submit">Search</button>
