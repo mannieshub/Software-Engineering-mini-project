@@ -48,7 +48,7 @@ session_start();
 <body>
     <div id="navbar"></div>
     <?php
-    //echo $_POST['CourseID'];
+    echo $_POST['CourseID'];
     if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
         $CourseID = $_POST['CourseID'];
 
@@ -127,17 +127,22 @@ session_start();
                                 <p>&nbsp;&nbsp;<?= "" ?></p>
                             </div>
                         </div>
+                        <?php
+                        foreach ($conn->query("SELECT COUNT(*) FROM coursecomment WHERE CourseID = ".$CourseID.";") as $i){
+                            $count = $i[0];
+                       }
+                        ?>
                         <div class="card-footer bg-white">
-                            <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row['0'] ?>-2" aria-expanded="false" aria-controls="collapseExample">
-                                ดูความคิดเห็น (<?= "CommentCount" ?>)
+                            <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-2" aria-expanded="false" aria-controls="collapseExample">
+                                ดูความคิดเห็น (<?= $count ?>)
                             </button>
-                            <button class="btn btn-success mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row['0'] ?>-3" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-success mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-3" aria-expanded="false" aria-controls="collapseExample">
                                 แสดงความคิดเห็น
                             </button>
-                            <div class="collapse" id="id<?= $row['0'] ?>-2"> <!-- Comment loop fetch -->
+                            <div class="collapse" id="id<?= $CourseID ?>-2"> <!-- Comment loop fetch -->
                                 <?php
-                                $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $row['0'] . ";");
-
+                                $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $CourseID . ";");
+                                
                                 foreach ($result as $row1) {
 
                                 ?>
@@ -150,13 +155,13 @@ session_start();
 
                                                 </div>
                                                 <div class="card-subtitle">
-                                                    <?= $row1['2'] ?>
+                                                    <?= $row1['4'] ?>
                                                 </div>
 
                                             </div>
                                             <div class="card-body">
                                                 <div class="card-subtitle">
-                                                    <p>&nbsp;&nbsp;<?= $row1['1'] ?></p>
+                                                    <p>&nbsp;&nbsp;<?= $row1['2'] ?></p>
                                                 </div>
 
                                             </div>
@@ -168,12 +173,12 @@ session_start();
                                 ?>
                             </div>
                         </div>
-                        <div class="collapse" id="id<?= $row['0'] ?>-3">
+                        <div class="collapse" id="id<?= $CourseID ?>-3">
                             <div class="card text-dark bg-white border-success mx-5 my-3">
                                 <div class="card-header bg-success text-white">แสดงความคิดเห็น</div>
                                 <div class="card-body">
-                                    <form action="post_save1.php" method="post">
-                                        <input type="hidden" name="post_id" value="<?= $row['0'] ?>">
+                                    <form action="comsave.php" method="post">
+                                        <input type="hidden" name="post_id" value="<?= $CourseID ?>">
                                         <div class="row mb-3 justify-content-center">
                                             <div class="col-lg-10">
                                                 <textarea name="comment" class="form-control" rows="8"></textarea>
@@ -265,7 +270,7 @@ session_start();
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">
-                                        <h5>รายวิชาที่สอน</h5>
+                                        <h5 class="mt-3">รายวิชาที่สอน</h5>
                                         <?php
                                         $sql3 = "SELECT t.CourseID,c.CourseName,t.ShortName FROM teacherteach t , coursedb c , teacherdb b WHERE t.CourseID=c.CourseID AND t.ShortName=b.ShortName AND t.ShortName = :sn";
                                         $stmt3 = $conn->prepare($sql3);
@@ -273,11 +278,14 @@ session_start();
                                         $stmt3->bindParam(':sn', $row['ShortName'], PDO::PARAM_STR);
                                         $stmt3->execute();
                                         while ($row3 = $stmt3->fetch()) {
-                                        ?> <form class="d-flex flex-column" method="post" action="testDetailForm.php">
+                                        ?> 
+                                        <div class="container">
+                                           
+                                        <form class="d-flex flex-fill " method="post" action="testDetailForm.php">
                                             <input type="hidden" name="CourseID" value="<?= $row3['CourseID'] ?>">
                                             <button class="btn btn-warning mt-2 text-white" type="submit" data-bs-toggle="collapse" data-bs-target="#id<?= $row2['0'] ?>-2" aria-expanded="false" aria-controls="collapseExample">
                                                 <?= $row3['CourseName'] ?>
-                                            </button></form>
+                                            </button></form></div>
                                         <?php
                                         }
 
