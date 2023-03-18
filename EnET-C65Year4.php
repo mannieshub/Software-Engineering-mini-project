@@ -72,13 +72,13 @@
         <div class="card h-100">
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030513162</h5>
-            <p class="card-text">Computer Engineering Project</p>
+            <p class="card-text">Computer Engineering Technology Project</p>
             <form action="testDetailForm.php" method="post">
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="030513162">
-                
+
                 <div class="ms-auto">
-              <button type="submit" class="btn" style="background-color: #F1BB93;">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
                     <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
@@ -98,9 +98,9 @@
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="030513XXX">
                 <div class="ms-auto">
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                  </div>
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
               </div>
             </form>
           </div>
@@ -119,9 +119,9 @@
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="030513XXX">
                 <div class="ms-auto">
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                  </div>
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
               </div>
             </form>
           </div>
@@ -140,9 +140,9 @@
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="030513XXX">
                 <div class="ms-auto">
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                  </div>
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
               </div>
             </form>
           </div>
@@ -160,29 +160,8 @@
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="030513XXX">
                 <div class="ms-auto">
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-                  </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    
-
-
-
-    <div class="col col-12">
-      <div class="card h-100">
-        <div class="card-body" style="background-color:#F1EBCC ;">
-          <h5 class="card-title fw-bold">0801030XX</h5>
-          <p class="card-text">Language Elective Course 4</p>
-          <form action="Elective-Course.php" method="post">
-            <div class="d-flex justify-content-between align-items-end mt-3">
-              <input type="hidden" name="CourseID" value="0801030XX">
-              <div class="ms-auto">
-              <button type="submit" class="btn" style="background-color: #F1BB93;">
-                <i class="bi bi-search"></i>View</button>
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
                 </div>
               </div>
             </form>
@@ -192,32 +171,53 @@
 
 
 
-  
-  <div class="col col-12">
-    <div class="card h-100">
-      <div class="card-body" style="background-color:#F1EBCC ;">
-        <h5 class="card-title fw-bold">08XXXXXXX</h5>
-        <p class="card-text">General Education Elective</p>
 
-        <form action="Elective-Course.php" method="post">
-          <div class="d-flex justify-content-between align-items-end mt-3">
-            <input type="hidden" name="CourseID" value="0802039XX">
-            <div class="ms-auto">
-              <button type="submit" class="btn" style="background-color: #F1BB93;">
-              <i class="bi bi-search"></i>View</button>
-            </div>
+      <div class="col col-12">
+        <div class="card h-100">
+          <div class="card-body" style="background-color:#F1EBCC ;">
+            <h5 class="card-title fw-bold">08xxxxxxx</h5>
+            <p class="card-text">Language Elective Course 2</p>
+            <form action="Elective-Course.php" method="post">
+              <div class="d-flex justify-content-between align-items-end mt-3">
+                <input type="hidden" name="CourseID" value="08xxxxxxx">
+                <div class="ms-auto">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
+
+
+
+
+      <div class="col col-12">
+        <div class="card h-100">
+          <div class="card-body" style="background-color:#F1EBCC ;">
+            <h5 class="card-title fw-bold">08xxxxxxx</h5>
+            <p class="card-text">Sport & Recreation Elective Course 2</p>
+
+            <form action="Elective-Course.php" method="post">
+              <div class="d-flex justify-content-between align-items-end mt-3">
+                <input type="hidden" name="CourseID" value="08xxxxxxx">
+                <div class="ms-auto">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
-  </div>
-  
-
 
   </div>
-  
-  </div>
-  
+
 
   <div class="container mt-4 ">
     <div class="row mb-4">
@@ -238,17 +238,21 @@
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030513260</h5>
             <p class="card-text">Co-operative Education</p>
-            <input type="hidden" name="CourseID" value="030513260">
-            <div class="ms-auto">
-            <button type="submit" class="btn" style="background-color: #F1BB93;">
-              <i class="bi bi-search"></i>View</button>
-              </div>
+            <form action="Elective-Course.php" method="post">
+              <div class="d-flex justify-content-between align-items-end mt-3">
+                <input type="hidden" name="CourseID" value="030513260">
+                <div class="ms-auto">
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </div>
               </div>
             </form>
           </div>
+
         </div>
       </div>
-   
+    </div>
+
 
   </div>
 
@@ -266,9 +270,9 @@
               </a>
             </li>
             <li class="page-item "><a class="page-link" href="EnET-C65Year1.php">1</a></li>
-                    <li class="page-item"><a class="page-link" href="EnET-C65Year2.php">2</a></li>
-                    <li class="page-item"><a class="page-link" href="EnET-C65Year3.php">3</a></li>
-                    <li class="page-item disabled"><a class="page-link" href="EnET-C65Year4.php">4</a></li>
+            <li class="page-item"><a class="page-link" href="EnET-C65Year2.php">2</a></li>
+            <li class="page-item"><a class="page-link" href="EnET-C65Year3.php">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="EnET-C65Year4.php">4</a></li>
             <li class="page-item">
               <a class="page-link disabled" href="#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>

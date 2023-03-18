@@ -71,12 +71,12 @@
     </div>
     <div class="container">
 
-    <!---ตัวอย่าง--->
-    <!---1 row มี 4 column--->
+      <!---ตัวอย่าง--->
+      <!---1 row มี 4 column--->
 
-    <!---1 แบบไม่มีตัวต่อ--->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
-     <div class="col col-12">
+      <!---1 แบบไม่มีตัวต่อ--->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
+        <div class="col col-12">
           <form action="testDetailForm.php" method="post">
             <div class="card h-100">
               <div class="card-body" style="background-color:#F1EBCC;">
@@ -121,64 +121,65 @@
 
         <!---3 แบบมีตัวต่อ 2 ตัว--->
         <div class="col col-12">
-        <div class="card h-100">
-          <div class="card-body" style="background-color:#F1EBCC ;">
-            <h5 class="card-title fw-bold">รหัสวิชา row 1 col 3</h5>
-            <p class="card-text">ชื่อวิชา row 1 col 3</p>
-            <div class="d-flex justify-content-between align-items-end mt-3">
+          <div class="card h-100">
+            <div class="card-body" style="background-color:#F1EBCC ;">
+              <h5 class="card-title fw-bold">รหัสวิชา row 1 col 3</h5>
+              <p class="card-text">ชื่อวิชา row 1 col 3</p>
+              <div class="d-flex justify-content-between align-items-end mt-3">
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="040203111"><!---แก้รหัสของตัวต่อให้ตรง--->
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">ตัวต่อที่ 1</button>
+                </form>
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="040203111"><!---แก้รหัสของวิชานี้ให้ตรง--->
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </form>
+              </div>
               <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="040203111"><!---แก้รหัสของตัวต่อให้ตรง--->
-                <button type="submit" class="btn" style="background-color: #F1BB93;">ตัวต่อที่ 1</button>
-              </form>
-              <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="040203111"><!---แก้รหัสของวิชานี้ให้ตรง--->
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
+                <div class="d-flex justify-content-between align-items-end mt-3">
+                  <input type="hidden" name="CourseID" value="040203111"><!---แก้รหัสของตัวต่อให้ตรง--->
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">ตัวต่อที่ 2</button>
+                </div>
               </form>
             </div>
-            <form action="testDetailForm.php" method="post">
-              <div class="d-flex justify-content-between align-items-end mt-3">
-                <input type="hidden" name="CourseID" value="040203111"><!---แก้รหัสของตัวต่อให้ตรง--->
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">ตัวต่อที่ 2</button>
-              </div>
-            </form>
           </div>
         </div>
-      </div>
 
 
 
         <!---4 แบบมีตัวต่อ 3 ตัว--->
         <div class="col col-12">
           <div class="card h-100">
-          <div class="card-body" style="background-color:#F1EBCC ;">
+            <div class="card-body" style="background-color:#F1EBCC ;">
               <div>
                 <h5 class="card-title fw-bold">รหัสวิชา row 1 col 4</h5>
                 <p class="card-text">ชื่อวิชา row 1 col 4</p>
               </div>
+
               <div class="d-flex justify-content-between align-items-end mt-3">
-              <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="030513348"><!---แก้รหัสของตัวต่อให้ตรง--->
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                ตัวต่อที่ 1</button>
-              </form>
-              <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="030513323"><!---แก้รหัสของวิชานี้ให้ตรง--->
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                  <i class="bi bi-search"></i>View</button>
-              </form>
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="030513348"><!---แก้รหัสของตัวต่อให้ตรง--->
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    ตัวต่อที่ 1</button>
+                </form>
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="030513323"><!---แก้รหัสของวิชานี้ให้ตรง--->
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    <i class="bi bi-search"></i>View</button>
+                </form>
               </div>
               <div class="d-flex justify-content-between align-items-end mt-3">
-              <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="030513127"><!---แก้รหัสของตัวต่อให้ตรง--->
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                ตัวต่อที่ 2</button>
-              </form>
-              <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="030513243"><!---แก้รหัสของตัวต่อให้ตรง--->
-                <button type="submit" class="btn" style="background-color: #F1BB93;">
-                ตัวต่อที่ 3</button>
-              </form>
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="030513127"><!---แก้รหัสของตัวต่อให้ตรง--->
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    ตัวต่อที่ 2</button>
+                </form>
+                <form action="testDetailForm.php" method="post">
+                  <input type="hidden" name="CourseID" value="030513243"><!---แก้รหัสของตัวต่อให้ตรง--->
+                  <button type="submit" class="btn" style="background-color: #F1BB93;">
+                    ตัวต่อที่ 3</button>
+                </form>
               </div>
             </div>
           </div>
@@ -189,7 +190,7 @@
       </div>
 
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
-<!---ตัวอย่าง--->
+        <!---ตัวอย่าง--->
 
         <!---อันนี้แก้ให้สวยแล้ว--->
         <div class="col col-12">
@@ -522,12 +523,12 @@
           </div>
 
           <div class="col col-12">
-            
-              <div class="card h-100">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">0801030XX</h5>
-                  <p class="card-text">Language Elective Course 2</p>
-                  <div class="d-flex justify-content-between align-items-end mt-3">
+
+            <div class="card h-100">
+              <div class="card-body" style="background-color:#F1EBCC ;">
+                <h5 class="card-title fw-bold">0801030XX</h5>
+                <p class="card-text">Language Elective Course 2</p>
+                <div class="d-flex justify-content-between align-items-end mt-3">
                   <form action="Elective-Course.php" method="post">
                     <input type="hidden" name="CourseID" value="0801030XX">
                     <div class="ms-auto">
@@ -536,17 +537,17 @@
                       </button>
                     </div>
                   </form>
-                  </div>
                 </div>
               </div>
+            </div>
           </div>
 
           <div class="col col-12">
-              <div class="card h-100">
-                <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">0803035XX</h5>
-                  <p class="card-text">Physical Education Elective</p>
-                  <div class="d-flex justify-content-between align-items-end mt-3">
+            <div class="card h-100">
+              <div class="card-body" style="background-color:#F1EBCC ;">
+                <h5 class="card-title fw-bold">0803035XX</h5>
+                <p class="card-text">Physical Education Elective</p>
+                <div class="d-flex justify-content-between align-items-end mt-3">
                   <form action="Elective-Course.php" method="post">
                     <input type="hidden" name="CourseID" value="0803035XX">
                     <div class="ms-auto">
@@ -554,9 +555,9 @@
                         <i class="bi bi-search"></i>View</button>
                     </div>
                   </form>
-                  </div>
                 </div>
               </div>
+            </div>
           </div>
 
 
