@@ -4,6 +4,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,24 +44,26 @@ session_start();
         });
     </script>
 </head>
+
 <body>
-<div id="navbar"></div>
+    <div id="navbar"></div>
     <?php
-        //echo $_POST['CourseID'];
+    //echo $_POST['CourseID'];
     if (isset($_POST['CourseID']) && !empty($_POST['CourseID'])) {
         $CourseID = $_POST['CourseID'];
 
         $newUrl = 'http://noteapinun.trueddns.com:28501/SE_Pro-/testDetailForm.php?CourseID=' . $CourseID;
         unset($_POST['CourseID']);
 
-        
+
         $host = "noteapinun.trueddns.com";
         $dbport = "28502";
         $dbname = "se_db";
         $dbusername = "web";
         $dbpassword = "web1234";
-        $conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);}
-        
+        $conn = new PDO("mysql:host=$host;port=$dbport;dbname=$dbname", $dbusername, $dbpassword);
+    }
+
     ?>
     "<div class="container">
         <div class="row">
@@ -71,136 +74,57 @@ session_start();
                         <div class="card-title">
                             <h4 class="bi bi-person-circle">
                                 <?php
-                                $sql = "SELECT CourseID FROM CourseDB WHERE CourseID = :CourseID";
-                                $stmt = $conn->prepare($sql);
 
-                                // Bind the CourseID parameter to the placeholder
-                                $stmt->bindParam(':CourseID', $CourseID);
-
-                                // Execute the query and fetch the result
-                                $stmt->execute();
-                                $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
                                 // Display the CourseID in the card title
-                                echo '<span>' . $result['CourseID'] . '</span>';
+                                echo '<span>' . $CourseID . '</span>';
                                 ?></h4>
                         </div>
                         <div class="card-subtitle">
                             <?php
-                                 $sql = "SELECT CourseName FROM CourseDB WHERE CourseID = :CourseID";
-                                 $stmt = $conn->prepare($sql);
-                             
-                                 // Bind the CourseID parameter to the placeholder
-                                 $stmt->bindParam(':CourseID', $CourseID);
-                             
-                                 // Execute the query and fetch the result
-                                 $stmt->execute();
-                                 $result = $stmt->fetch(PDO::FETCH_ASSOC);
-                             
-                                 // Display the CourseName in the card title
-                                 echo '<span>' . $result['CourseName'] . '</span>';
+
+                            echo '<span>' . 'Elective Course' . '</span>';
                             ?>
                         </div>
 
                     </div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h5><?php
-                                $CourseID = str_replace('X', '%', $CourseID);
-                                $sql = "SELECT CourseID, CourseName FROM CourseDB WHERE CourseID LIKE :CourseID AND CourseName NOT LIKE '%Elective%'";
-                                $stmt = $conn->prepare($sql);
-                                
-                                // Bind the CourseID parameter to the placeholder
-                                $stmt->bindParam(':CourseID', $CourseID);
-                                
-                                // Execute the query and fetch all results
-                                $stmt->execute();
-                                $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                                
-                                // Loop through the results and display each CourseName value
-                                foreach ($results as $result) {
-                                    echo '<span>' . $result['CourseID'] . '</span>&emsp;';
-                                    echo '<span>' . $result['CourseName'] . '</span><br>';
-                                }
-
-                                
-                            ?>
-                            </h5>
-                        </div>
-                        <div class="card-subtitle">
-                            <p>&nbsp;&nbsp;<?= "" ?></p>
-                        </div>
-                    </div>
-                    <div class="card-footer bg-white">
-                        <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row['0'] ?>-2" aria-expanded="false" aria-controls="collapseExample">
-                            ดูความคิดเห็น (<?= "CommentCount" ?>)
-                        </button>
-                        <button class="btn btn-success mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row['0'] ?>-3" aria-expanded="false" aria-controls="collapseExample">
-                            แสดงความคิดเห็น
-                        </button>
-                        <div class="collapse" id="id<?= $row['0'] ?>-2"> <!-- Comment loop fetch -->
+                    <div class="card-body d-flex flex-wrap justify-content-between">
+                        <div class="card-title d-flex flex-wrap">
                             <?php
-                            $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $row['0'] . ";");
+                            $CourseID = str_replace('X', '%', $CourseID);
+                            $CourseID = str_replace('x', '%', $CourseID);
+                            $sql = "SELECT CourseID, CourseName FROM CourseDB WHERE CourseID LIKE :CourseID AND CourseName NOT LIKE '%Elective%'";
+                            $stmt = $conn->prepare($sql);
 
-                            foreach ($result as $row1) {
+                            // Bind the CourseID parameter to the placeholder
+                            $stmt->bindParam(':CourseID', $CourseID);
 
+                            // Execute the query and fetch all results
+                            $stmt->execute();
+                            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                            // Loop through the results and display each CourseName value
+                            foreach ($results as $result) {
                             ?>
-
-                                <div class="container">
-                                    <div class="card my-4 text-dark bg-white border-warning">
-                                        <div class="card-header text-white bg-warning ">
-                                            <div class="card-title">
-                                                <h4 class="bi bi-person-circle">&nbsp;<?= $row1['5'] ?></h4>
-
-                                            </div>
-                                            <div class="card-subtitle">
-                                                <?= $row1['2'] ?>
-                                            </div>
-
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="card-subtitle">
-                                                <p>&nbsp;&nbsp;<?= $row1['1'] ?></p>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
+                                <form style="margin-bottom: 10px" method="post" action="testDetailForm.php">
+                                    <input type="hidden" name="CourseID" value="<?= $result['CourseID'] ?>">
+                                    <button class="btn btn-warning text-white mx-3" type="submit" data-bs-toggle="collapse" data-bs-target="#id<?= $row2['0'] ?>-2" aria-expanded="false" aria-controls="collapseExample">
+                                        <?= $result['CourseName'] ?>
+                                    </button>
+                                </form>
                             <?php
                             }
                             ?>
                         </div>
                     </div>
-                    <div class="collapse" id="id<?= $row['0'] ?>-3">
-                        <div class="card text-dark bg-white border-success mx-5 my-3">
-                            <div class="card-header bg-success text-white">แสดงความคิดเห็น</div>
-                            <div class="card-body">
-                                <form action="post_save1.php" method="post">
-                                    <input type="hidden" name="post_id" value="<?= $row['0'] ?>">
-                                    <div class="row mb-3 justify-content-center">
-                                        <div class="col-lg-10">
-                                            <textarea name="comment" class="form-control" rows="8"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <center>
-                                                <button type="submit" class="btn btn-success btn-sm text-white">
-                                                    <i class="bi bi-box-arrow-up-right me-1"></i>
-                                                    ส่งข้อความ
-                                                </button>
-                                            </center>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+
+
+
 
                 </div>
             </div>
             <div class="col-1"></div>
         </div>
 </body>
+
 </html>

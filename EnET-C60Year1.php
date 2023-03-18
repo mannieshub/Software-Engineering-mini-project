@@ -195,12 +195,13 @@
         <div class="col col-12"> <!---ไม่มีข้อมูลในระบบ--->
 
           
-            <div class="card ">
+            <div class="card h-100">
+              <form action="Elective-Course.php" method="post">
               <div class="card-body" style="background-color:#F1EBCC ;">
                 <h5 class="card-title fw-bold">04XXXXXXX</h5>
                 <p class="card-text">Sci. and Math. Elective</p>
                 <div class="d-flex justify-content-between align-items-end mt-3">
-                  <form action="Elective-Course.php" method="post">
+                  
                     <input type="hidden" name="CourseID" value="04XXXXXXX">
                     <div class="ms-auto">
                       <button type="submit" class="btn" style="background-color: #F1BB93;">
