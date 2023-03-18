@@ -94,9 +94,9 @@
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030513XXX</h5>
             <p class="card-text">Computer Elective Course 1</p>
-            <form action="testDetailForm.php" method="post">
+            <form action="Elective-Course.php" method="post">
               <div class="d-flex justify-content-between align-items-end mt-3">
-                <input type="hidden" name="CourseID" value="030513XXX">
+                <input type="hidden" name="CourseID" value="0305133XX">
                 <div class="ms-auto">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
@@ -115,7 +115,7 @@
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030513XXX</h5>
             <p class="card-text">Computer Elective Course 2</p>
-            <form action="testDetailForm.php" method="post">
+            <form action="Elective-Course.php" method="post">
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="030513XXX">
                 <div class="ms-auto">
@@ -136,7 +136,7 @@
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030513XXX</h5>
             <p class="card-text">Computer Elective Course 3</p>
-            <form action="testDetailForm.php" method="post">
+            <form action="Elective-Course.php" method="post">
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="030513XXX">
                 <div class="ms-auto">
@@ -156,9 +156,9 @@
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030513XXX</h5>
             <p class="card-text">Computer Elective Course 4</p>
-            <form action="testDetailForm.php" method="post">
+            <form action="Elective-Course.php" method="post">
               <div class="d-flex justify-content-between align-items-end mt-3">
-                <input type="hidden" name="CourseID" value="030513XXX">
+                <input type="hidden" name="CourseID" value="0305135XX">
                 <div class="ms-auto">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
@@ -238,13 +238,15 @@
           <div class="card-body" style="background-color:#F1EBCC ;">
             <h5 class="card-title fw-bold">030513260</h5>
             <p class="card-text">Co-operative Education</p>
-            <input type="hidden" name="CourseID" value="030513260">
-            <div class="ms-auto">
-            <button type="submit" class="btn" style="background-color: #F1BB93;">
-              <i class="bi bi-search"></i>View</button>
-              </div>
-              </div>
+            <form action="testDetailForm.php" method="post">
+              <input type="hidden" name="CourseID" value="030513260">
+              <div class="ms-auto">
+                <button type="submit" class="btn" style="background-color: #F1BB93;">
+                <i class="bi bi-search"></i>View</button>
+                </div>
             </form>
+                </div>
+            
           </div>
         </div>
       </div>
