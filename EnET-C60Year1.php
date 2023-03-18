@@ -62,7 +62,7 @@
       <div class="col-4">
         <nav class="navbar rounded-start rounded-end" style="background-color: #F1BB93;">
           <div class="container-fluid">
-            <p class="navbar-brand mb-0  text-dark ">ชั้นปีที่ 1 ภาคการศึกษาที่ 1 | 20 หน่วยกิต</p>
+            <p class="navbar-brand mb-0  text-dark ">ชั้นปีที่ 1 ภาคการศึกษาที่ 1</p>
           </div>
         </nav>
       </div>
