@@ -252,7 +252,8 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
 
             // bind parameters to prepared statements
             $search_term = "$search_term%";
-            $stmt->bindParam(':search_term', $search_term, PDO::PARAM_STR);
+            $search_term1 = "%$search_term%";
+            $stmt->bindParam(':search_term', $search_term1, PDO::PARAM_STR);
             $stmt1->bindParam(':search_term', $search_term, PDO::PARAM_STR);
 
             // execute prepared statements

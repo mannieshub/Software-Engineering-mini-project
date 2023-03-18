@@ -8,6 +8,15 @@ $dbpassword = "web1234";
 $conn = mysqli_connect($host, $dbusername, $dbpassword, $dbname, $dbport);
 
 
+session_start(); // Start the session
+
+isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
+if ($ro != "") {
+  header("Location: index.php");
+  exit();
+}
+
+
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

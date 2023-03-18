@@ -1,5 +1,13 @@
 <?php
-session_start();
+
+session_start(); // Start the session
+
+isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
+if ($ro == "") {
+  header("Location: index.php");
+  exit();
+}
+
 
 $stdID = $_SESSION['stdid'];
 $user = $_SESSION["username"];

@@ -1,6 +1,10 @@
 <?php
 session_start();
-
+isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
+if ($ro == "") {
+  header("Location: homepage.php");
+  exit();
+}
 $stdID = $_SESSION['stdid'];
 $user = $_SESSION["username"];
 $email = $_SESSION["email"];

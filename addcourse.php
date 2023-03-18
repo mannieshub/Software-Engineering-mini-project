@@ -1,3 +1,12 @@
+<?php
+session_start(); // Start the session
+
+isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
+if ($ro == "") {
+  header("Location: index.php");
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

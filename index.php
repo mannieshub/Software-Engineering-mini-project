@@ -16,7 +16,7 @@ if($_SESSION['role'] == "Student"){
 } elseif($_SESSION['role'] == "Admin"){
   // Display content for admins
   echo "Welcome, admin! This is the admin homepage.";
-  header("Location: homepage.php");
+  header("Location: AdminPage.php");
   exit();
 }else{
   header("Location: login.php");
