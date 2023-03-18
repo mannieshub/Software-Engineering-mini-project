@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -144,9 +144,11 @@ session_start();
                             <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-2" aria-expanded="false" aria-controls="collapseExample">
                                 ดูความคิดเห็น (<?= $count ?>)
                             </button>
+                            <?php if($ro != "") {?>
                             <button class="btn btn-success mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-3" aria-expanded="false" aria-controls="collapseExample">
                                 แสดงความคิดเห็น
                             </button>
+                            <?php } ?>
                             <div class="collapse" id="id<?= $CourseID ?>-2"> <!-- Comment loop fetch -->
                                 <?php
                                 $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $CourseID . ";");
@@ -325,9 +327,11 @@ session_start();
                                     <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row['ShortName'] ?>-2" aria-expanded="false" aria-controls="collapseExample">
                                         ดูความคิดเห็น (<?= $count ?>)
                                     </button>
+                                    <?php if($ro != "") {?>
                                     <button class="btn btn-success mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row['ShortName'] ?>-3" aria-expanded="false" aria-controls="collapseExample">
                                         แสดงความคิดเห็น
                                     </button>
+                                    <?php } ?>
                                     <div class="collapse" id="id<?= $row['0'] ?>-2"> <!-- Comment loop fetch -->
                                         <?php
 
@@ -453,9 +457,11 @@ session_start();
                                     <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row["CourseID"] ?>-2" aria-expanded="false" aria-controls="collapseExample">
                                         ดูความคิดเห็น (<?= $count ?>)
                                     </button>
+                                    <?php if($ro != "") {?>
                                     <button class="btn btn-success mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $row["CourseID"] ?>-3" aria-expanded="false" aria-controls="collapseExample">
                                         แสดงความคิดเห็น
                                     </button>
+                                    <?php } ?>
                                     <div class="collapse" id="id<?= $row["CourseID"] ?>-2"> <!-- Comment loop fetch -->
                                         <?php
                                         $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $row["CourseID"] . ";");

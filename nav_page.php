@@ -6,15 +6,15 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
 // Check the user's role
 if ($ro == "Student") {
   // Display content for Students
-  $r = "[Student]";
+  $r = "[Student] ";
   $u = $_SESSION['username'];
-} elseif ($ro == "admin") {
+} elseif ($ro == "Admin") {
   // Display content for admins
-  $r = "[Admin]";
+  $r = "[Admin] ";
   $u = $_SESSION['username'];
 } else {
   // Display content for guests
-  $r = "[Guest]";
+  $r = "[Guest] ";
   $u = "";
 }
 ?>
@@ -137,7 +137,7 @@ $(document).ready(function() {
         </li>
         <?php if ($ro != "") { ?>
           <li class="nav-item me-lg-2 mb-2">
-            <a class="btn fw-bold nav-link" style="background-color: #F1BB93;" href="#">Add Course</a>
+            <a class="btn fw-bold nav-link" style="background-color: #F1BB93;" href="addcourse.php">Add Course</a>
           </li>
         <?php } ?>
         <li class="nav-item me-lg-2 mb-2">
@@ -173,7 +173,11 @@ $(document).ready(function() {
         <?php if ($ro == "") { ?>
           <li><a class="dropdown-item" href="login.php">Login</a></li>
           <li><a class="dropdown-item" href="register.php">Register</a></li>
-        <?php } else { ?>
+        
+        <?php  }else { ?>
+          <?php  if ($ro == "Admin") { ?>
+          <li><a class="dropdown-item" href="AdminPage.php">AdminPage</a></li>
+          <?php } ?>
           <li><a class="dropdown-item" href="Profile.php">Edit Profile</a></li>
           <li><a class="dropdown-item" href="Report.php">Report a Problem</a></li>
           <li><a class="dropdown-item" href="Ch_pwd.php">Change Password</a></li>
