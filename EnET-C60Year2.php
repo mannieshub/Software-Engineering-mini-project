@@ -103,17 +103,17 @@
           <div class="card h-100">
             <div class="card-body" style="background-color:#F1EBCC ;">
               <div>
-                <h5 class="card-title fw-bold">030513320</h5>
+                <h5 class="card-title fw-bold">030513334</h5>
                 <p class="card-text">Digital Circuit and Logic Design</p>
               </div>
               <div class="d-flex justify-content-between align-items-start mt-3">
                 <form action="testDetailForm.php" method="post">
-                  <input type="hidden" name="CourseID" value="030513323">
+                  <input type="hidden" name="CourseID" value="030513335">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                     Microcon sys.</button>
                 </form>
                 <form action="testDetailForm.php" method="post">
-                  <input type="hidden" name="CourseID" value="030513320">
+                  <input type="hidden" name="CourseID" value="030513334">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                     <i class="bi bi-search"></i>View</button>
                 </form>
@@ -289,19 +289,22 @@
                 <p class="card-text">Microcontroller Systems</p>
               </div>
               <div class="d-flex justify-content-between align-items-end mt-3">
+
               <form action="testDetailForm.php" method="post">
                 <input type="hidden" name="CourseID" value="030513348">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
                   Embedded</button>
               </form>
+
               <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="030513323">
+                <input type="hidden" name="CourseID" value="030513335">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
               </form>
               
               </div>
               <div class="d-flex justify-content-between align-items-end mt-3">
+
               <form action="testDetailForm.php" method="post">
                 <input type="hidden" name="CourseID" value="030513127">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
@@ -342,7 +345,7 @@
         <div class="col col-12">
           <div class="card h-100">
             <div class="card-body" style="background-color:#F1EBCC ;">
-              <h5 class="card-title fw-bold">030513123</h5>
+              <h5 class="card-title fw-bold">030513328</h5>
               <p class="card-text">Data Commu. and Network</p>
 
               <form action="testDetailForm.php" method="post">
@@ -354,7 +357,7 @@
               </form>
 
               <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="030513123">
+                <input type="hidden" name="CourseID" value="030513328">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
               </form>

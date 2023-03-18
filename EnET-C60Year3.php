@@ -136,7 +136,7 @@
 
           <div class="d-flex justify-content-between align-items-end mt-3">
             <form action="testDetailForm.php" method="post">
-              <input type="hidden" name="CourseID" value="030513186">
+              <input type="hidden" name="CourseID" value="030513367">
               <button type="submit" class="btn" style="background-color: #F1BB93;">Net Security</button>
             </form>
 
@@ -305,12 +305,12 @@
       <div class="col col-12">
         <div class="card h-100">
           <div class="card-body" style="background-color:#F1EBCC ;">
-            <h5 class="card-title fw-bold">030513186</h5>
+            <h5 class="card-title fw-bold">030513367</h5>
             <p class="card-text">Network Security</p>
 
             <form action="testDetailForm.php" method="post">
             <div class="d-flex justify-content-between align-items-end mt-3">
-              <input type="hidden" name="CourseID" value="030513186">
+              <input type="hidden" name="CourseID" value="030513367">
               <div class="ms-auto">
               <button type="submit" class="btn" style="background-color: #F1BB93;">
                 <i class="bi bi-search"></i>View</button>
@@ -343,12 +343,12 @@
       <div class="col col-12">
         <div class="card h-100">
           <div class="card-body" style="background-color:#F1EBCC ;">
-            <h5 class="card-title fw-bold">030516153</h5>
+            <h5 class="card-title fw-bold">030513185</h5>
             <p class="card-text">Computer Vision</p>
 
             <form action="testDetailForm.php" method="post">
             <div class="d-flex justify-content-between align-items-end mt-3">
-              <input type="hidden" name="CourseID" value="030516153">
+              <input type="hidden" name="CourseID" value="030513185">
               <div class="ms-auto">
               <button type="submit" class="btn" style="background-color: #F1BB93;">
                 <i class="bi bi-search"></i>View</button>
