@@ -50,10 +50,10 @@ $email = $_SESSION["email"];
       $("#navbar").load("nav_page.php");
     });
 
-    function password_show_hide() {
-      let x = document.getElementById("password");
-      let show_eye = document.getElementById("show_eye");
-      let hide_eye = document.getElementById("hide_eye");
+    function password_show_hide(inputId, showId, hideId) {
+      let x = document.getElementById(inputId);
+      let show_eye = document.getElementById(showId);
+      let hide_eye = document.getElementById(hideId);
       hide_eye.classList.remove("d-none");
       if (x.type === "password") {
         x.type = "text";
@@ -76,89 +76,93 @@ $email = $_SESSION["email"];
         <div class="col-2"></div>
         <div class="col-8">
           <?php
-          if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 1){
+          if (isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 1) {
             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                     New password and confirm password don\'t match
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>';
             unset($_SESSION["p_error"]);
-        }else if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 2){
+          } else if (isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 2) {
             echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                     Current password is incorrect
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>';
             unset($_SESSION["p_error"]);
-        }else if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 0){
-          echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+          } else if (isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 0) {
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
                   Success
                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>';
-          unset($_SESSION["p_error"]);
-      }else if(isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 3){
-        echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+            unset($_SESSION["p_error"]);
+          } else if (isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 3) {
+            echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
                   New password is same as current password
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               </div>';
-        unset($_SESSION["p_error"]);
-      }
+            unset($_SESSION["p_error"]);
+          }
           ?>
           <div class="card text-dark bg-white border-primary">
             <div class="card-header bg-primary text-white ">Change Password</div>
             <div class="card-body">
               <div class="row mb-3 ">
-                
-              <div class="row mb-3 ">
-                <label class="col-md-3 col-form-label">Current Password :</label>
-                <div class="col-md-9">
-                  <div class="input-group">
-                    <input type="password" class="form-control" name="current_password" required id="password">
-                    <span class="input-group-text " onclick="password_show_hide();">
-                      <i class="bi bi-eye-fill" id="show_eye"></i>
-                      <i class="bi bi-eye-slash-fill d-none" id="hide_eye"></i>
-                    </span>
+
+                <div class="row mb-3 ">
+                  <label class="col-md-3 col-form-label">Current Password :</label>
+                  <div class="col-md-9">
+                    <div class="input-group">
+                      <input type="password" class="form-control" name="current_password" required id="current_password">
+                      <span class="input-group-text" onclick="password_show_hide('current_password', 'show_eye_current', 'hide_eye_current');">
+                        <i class="bi bi-eye-fill" id="show_eye_current"></i>
+                        <i class="bi bi-eye-slash-fill d-none" id="hide_eye_current"></i>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row mb-3 ">
-                <label class="col-md-3 col-form-label">New Password :</label>
-                <div class="col-md-9">
-                  <div class="input-group">
-                    <input type="password" class="form-control" name="new_password" required id="password">
-                    <span class="input-group-text " onclick="password_show_hide();">
-                      <i class="bi bi-eye-fill" id="show_eye"></i>
-                      <i class="bi bi-eye-slash-fill d-none" id="hide_eye"></i>
-                    </span>
+
+                <div class="row mb-3 ">
+                  <label class="col-md-3 col-form-label">New Password :</label>
+                  <div class="col-md-9">
+                    <div class="input-group">
+                      <input type="password" class="form-control" name="new_password" required id="new_password">
+                      <span class="input-group-text" onclick="password_show_hide('new_password', 'show_eye_new', 'hide_eye_new');">
+                        <i class="bi bi-eye-fill" id="show_eye_new"></i>
+                        <i class="bi bi-eye-slash-fill d-none" id="hide_eye_new"></i>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="row mb-3 ">
-                <label class="col-md-3 col-form-label">Confirm Password :</label>
-                <div class="col-md-9">
-                  <div class="input-group">
-                    <input type="password" class="form-control" name="confirm_new_password" required id="password">
-                    <span class="input-group-text " onclick="password_show_hide();">
-                      <i class="bi bi-eye-fill" id="show_eye"></i>
-                      <i class="bi bi-eye-slash-fill d-none" id="hide_eye"></i>
-                    </span>
+
+                <div class="row mb-3 ">
+                  <label class="col-md-3 col-form-label">Confirm Password :</label>
+                  <div class="col-md-9">
+                    <div class="input-group">
+                      <input type="password" class="form-control" name="confirm_new_password" required id="confirm_new_password">
+                      <span class="input-group-text" onclick="password_show_hide('confirm_new_password', 'show_eye_confirm', 'hide_eye_confirm');">
+                        <i class="bi bi-eye-fill" id="show_eye_confirm"></i>
+                        <i class="bi bi-eye-slash-fill d-none" id="hide_eye_confirm"></i>
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
 
-              <div class="row mb-3">
-                <div class="col-1"></div>
-                <div class="col-md-10 d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary btn-sm bi bi-save w-75"> Save </button>
-                  
+
+
+                <div class="row mb-3">
+                  <div class="col-1"></div>
+                  <div class="col-md-10 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-sm bi bi-save w-75"> Save </button>
+
+                  </div>
+                  <div class="col-1"></div>
                 </div>
-                <div class="col-1"></div>
-              </div>
 
+              </div>
             </div>
           </div>
+          <div class="col-2"></div>
         </div>
-        <div class="col-2"></div>
-      </div>
     </form>
   </div>
 
