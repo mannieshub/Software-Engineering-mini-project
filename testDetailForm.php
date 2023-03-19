@@ -214,7 +214,7 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                 <div class="col-1"></div>
             </div>
         <?php
-    } elseif (isset($_POST['sbar']) && !empty($_POST['sbar']) || isset($_SESSION['sbar']) && !empty($_SESSION['sbar'])) {
+    } elseif ((isset($_POST['sbar']) && !empty(trim($_POST['sbar']))) || (isset($_SESSION['sbar']) && !empty(trim($_SESSION['sbar'])))) {
         if (isset($_POST['sbar']) && !empty($_POST['sbar'])) {
             $search_term = $_POST['sbar'];
             unset($_POST['sbar']);
@@ -535,10 +535,10 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                 //echo "0 results";
                 ?>
 
-                <div class="row">
+                <div class="row my-5">
                     <div class="col-1"></div>
                     <div class="col-10">
-                        <h3>ไม่พบข้อมูลจากฐานข้อมูล</h3>
+                        <center><h3>ไม่พบข้อมูลจากฐานข้อมูล</h3></center>
                     </div>
                     <div class="col-1"></div>
                 </div>
@@ -549,7 +549,10 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
             // close database connection
             $conn = null;
             ?>
-        <?php } ?>
+        <?php }else{
+            header('Location: '.$_SERVER['HTTP_REFERER']);
+            exit;
+        } ?>
         </div>
 </body>
 
