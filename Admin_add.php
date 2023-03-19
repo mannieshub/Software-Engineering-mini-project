@@ -69,11 +69,26 @@ if ($ro != "Admin") {
 <body>
     <div id="navbar" class="mb-3"></div>
     <div class="container">
-        <form action="" method="post">
-            <div class="row">
+        <form action="Admin_addsave.php" method="post">
+        
+        <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8">
-
+                <?php
+          if (isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 1) {
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Database Error
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>';
+            unset($_SESSION["p_error"]);
+          } else if (isset($_SESSION["p_error"]) && $_SESSION["p_error"] == 0) {
+            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                  Success
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>';
+            unset($_SESSION["p_error"]);
+          } 
+          ?>
                     <div class="card text-dark bg-white border-warning">
                         <div class="card-header bg-warning text-white">
                             <center>Add Data</center>
