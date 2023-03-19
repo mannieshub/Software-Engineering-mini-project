@@ -136,7 +136,7 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             </div>
                         </div>
                         <?php
-                        foreach ($conn->query("SELECT COUNT(*) FROM coursecomment WHERE CourseID = " . $CourseID . ";") as $i) {
+                        foreach ($conn->query("SELECT COUNT(*) FROM coursecomment WHERE CourseID = '" . $CourseID . "';") as $i) {
                             $count = $i[0];
                         }
                         ?>
@@ -151,7 +151,7 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             <?php } ?>
                             <div class="collapse" id="id<?= $CourseID ?>-2"> <!-- Comment loop fetch -->
                                 <?php
-                                $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $CourseID . ";");
+                                $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = '" . $CourseID . "';");
 
                                 foreach ($result as $row1) {
 
