@@ -141,6 +141,15 @@ if ($ro != "Admin") {
                                         </div>
                                     </div>
                                     </div>
+                                    </div>
+                            <div class="row mb-3">
+                                <div class="col-1"></div>
+                                <div class="col-md-10 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-warning btn-sm bi bi-save w-75"> Save </button>
+
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
                                                                     `;
                                         } else if (event.target.value === 'teacherdb') {
                                             inputBoxes.innerHTML = `
@@ -160,6 +169,15 @@ if ($ro != "Admin") {
                                         </div>
                                     </div>
                                     </div>
+                                    </div>
+                            <div class="row mb-3">
+                                <div class="col-1"></div>
+                                <div class="col-md-10 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-warning btn-sm bi bi-save w-75"> Save </button>
+
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
                                     
                                     
                                                                     `;
@@ -181,12 +199,7 @@ if ($ro != "Admin") {
                                         </div>
                                     </div>
                                     </div>
-                                                                    `;
-                                        }
-                                    });
-                                </script>
-
-                            </div>
+                                    </div>
                             <div class="row mb-3">
                                 <div class="col-1"></div>
                                 <div class="col-md-10 d-flex justify-content-center">
@@ -195,12 +208,18 @@ if ($ro != "Admin") {
                                 </div>
                                 <div class="col-1"></div>
                             </div>
+                                                                    `;
+                                        }
+                                    });
+                                </script>
 
+
+
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="col-2"></div>
-            </div>
         </form>
     </div>
 
