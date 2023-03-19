@@ -103,6 +103,13 @@ if ($ro != "Admin") {
       teacherteach
     </button>
 </center>
+<div class="my-3">
+  <center >
+  <a href='Admin_add.php' class='btn btn-success mx-3'>Add</a> 
+  <a href='Admin_edit.php' class='btn btn-primary mx-3'>Edit</a> 
+  <a href='Admin_delete.php' class='btn btn-danger mx-3'>Delete</a>
+  </center>
+</div>
     <script>
       // Get all collapse buttons
       const collapseButtons = document.querySelectorAll('[data-bs-toggle="collapse"]');
@@ -154,25 +161,18 @@ if ($ro != "Admin") {
         echo "<th scope='col'>Name</th>";
         echo "<th scope='col'>Email</th>";
         echo "<th scope='col'>Role</th>";
-        echo "<th scope='col'>Action</th>";
+        
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
         while ($row = $result->fetch()) {
           while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
             echo "<tr>";
-            echo "<td><input type='text' name='stdID[]' value='" . $row["stdID"] . "'></td>";
-            echo "<td><input type='text' name='stdName[]' value='" . $row["stdName"] . "'></td>";
-            echo "<td><input type='text' name='Email[]' value='" . $row["Email"] . "'></td>";
-      ?>
-            <td>
-              <select name='Role[]'>
-                <option value='Student' <?php if ($row["Role"] == "Student") echo "selected"; ?>>Student</option>
-                <option value='Admin' <?php if ($row["Role"] == "Admin") echo "selected"; ?>>Admin</option>
-              </select>
-            </td>
-      <?php
-            echo "<td><a href='edit.php?id=" . $row["stdID"] . "' class='btn btn-primary'>Edit</a> <a href='delete.php?id=" . $row["stdID"] . "' class='btn btn-danger'>Delete</a></td>";
+            echo "<td>" . $row["stdID"] . "</td>";
+            echo "<td>" . $row["stdName"] . "</td>";
+            echo "<td>" . $row["Email"] . "</td>";
+            echo "<td>" . $row["Role"] . "</td>";
+            
             echo "</tr>";
           }
         }
@@ -200,7 +200,7 @@ if ($ro != "Admin") {
         echo "<th scope='col'>Topic</th>";
         echo "<th scope='col'>ID</th>";
         echo "<th scope='col'>Detail</th>";
-        echo "<th scope='col'>Action</th>";
+        
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
@@ -210,7 +210,7 @@ if ($ro != "Admin") {
             echo "<td>" . $row["Topic"] . "</td>";
             echo "<td>" . $row["ID"] . "</td>";
             echo "<td>" . $row["Detail"] . "</td>";
-            echo "<td><a href='delete.php?id=" . $row["Detail"] . "' class='btn btn-danger'>Delete</a></td>";
+            
             echo "</tr>";
           }
         }
@@ -237,7 +237,7 @@ if ($ro != "Admin") {
         echo "<th scope='col'>CComment</th>";
         echo "<th scope='col'>stdID</th>";
         echo "<th scope='col'>PostDate</th>";
-        echo "<th scope='col'>Action</th>";
+        
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
@@ -249,7 +249,7 @@ if ($ro != "Admin") {
             echo "<td>" . $row["CComment"] . "</td>";
             echo "<td>" . $row["stdID"] . "</td>";
             echo "<td>" . $row["PostDate"] . "</td>";
-            echo "<td><a href='delete.php?id=" . $row["id"] . "' class='btn btn-danger'>Delete</a></td>";
+            
             echo "</tr>";
           }
         }
@@ -263,7 +263,6 @@ if ($ro != "Admin") {
     <div class="collapse" id="coursedb">
       <center>
         <h5 class="my-3">coursedb</h5>
-        <a href='add.php' class='btn btn-success'>Add</a> 
       </center>
       <?php
       $query = "SELECT * FROM coursedb";
@@ -276,7 +275,7 @@ if ($ro != "Admin") {
         echo "<th scope='col'>CourseName</th>";
         echo "<th scope='col'>Unit</th>";
         echo "<th scope='col'>CourseDetail</th>";
-        echo "<th scope='col'>Action</th>";
+        
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
@@ -287,7 +286,7 @@ if ($ro != "Admin") {
             echo "<td>" . $row["CourseName"] . "</td>";
             echo "<td>" . $row["Unit"] . "</td>";
             echo "<td>" . $row["CourseDetail"] . "</td>";
-            echo "<td><td><a href='edit.php?id=" . $row["CourseID"] . "' class='btn btn-primary'>Edit</a> <a href='delete.php?id=" . $row["CourseID"] . "' class='btn btn-danger'>Delete</a></td>";
+           
             echo "</tr>";
           }
         }
@@ -314,7 +313,7 @@ if ($ro != "Admin") {
         echo "<th scope='col'>TComment</th>";
         echo "<th scope='col'>stdID</th>";
         echo "<th scope='col'>DateTime</th>";
-        echo "<th scope='col'>Action</th>";
+        
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
@@ -326,7 +325,7 @@ if ($ro != "Admin") {
             echo "<td>" . $row["TComment"] . "</td>";
             echo "<td>" . $row["stdID"] . "</td>";
             echo "<td>" . $row["DateTime"] . "</td>";
-            echo "<td><a href='delete.php?id=" . $row["id"] . "' class='btn btn-danger'>Delete</a></td>";
+            
             echo "</tr>";
           }
         }
@@ -340,7 +339,7 @@ if ($ro != "Admin") {
     <div class="collapse" id="teacherdb">
       <center>
         <h5 class="my-3">teacherdb</h5>
-        <a href='add.php' class='btn btn-success'>Add</a> 
+        
       </center>
       <?php
       $query = "SELECT * FROM teacherdb";
@@ -351,7 +350,7 @@ if ($ro != "Admin") {
         echo "<tr>";
         echo "<th scope='col'>ShortName</th>";
         echo "<th scope='col'>TName</th>";
-        echo "<th scope='col'>Action</th>";
+        
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
@@ -360,7 +359,7 @@ if ($ro != "Admin") {
             echo "<tr>";
             echo "<td>" . $row["ShortName"] . "</td>";
             echo "<td>" . $row["TName"] . "</td>";
-            echo "<td><a href='edit.php?id=" . $row["ShortName"] . "' class='btn btn-primary'>Edit</a></td>";
+            
             echo "</tr>";
           }
         }
@@ -374,7 +373,6 @@ if ($ro != "Admin") {
     <div class="collapse" id="teacherteach">
       <center>
         <h5 class="my-3">teacherteach</h5>
-        <a href='add.php' class='btn btn-success'>Add</a>
       </center>
       <?php
       $query = "SELECT * FROM teacherteach";
@@ -385,7 +383,7 @@ if ($ro != "Admin") {
         echo "<tr>";
         echo "<th scope='col'>CourseID</th>";
         echo "<th scope='col'>ShortName</th>";
-        echo "<th scope='col'>Action</th>";
+        
         echo "</tr>";
         echo "</thead>";
         echo "<tbody>";
@@ -394,7 +392,6 @@ if ($ro != "Admin") {
             echo "<tr>";
             echo "<td>" . $row["CourseID"] . "</td>";
             echo "<td>" . $row["ShortName"] . "</td>";
-            echo "<td><a href='edit.php?id=" . $row["CourseID"] . "' class='btn btn-primary'>Edit</a> <a href='delete.php?id=" . $row["CourseID"] . "' class='btn btn-danger'>Delete</a></td>";
             echo "</tr>";
           }
         }
