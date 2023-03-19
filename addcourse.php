@@ -68,19 +68,19 @@ if ($ro == "") {
               <div class="mb-3 mt-3 row">
                 <label class="col-sm-2 col-form-label">ID</label>
                 <div class="col-sm-10">
-                  <input type="text" placeholder="EX.08001112" class="form-control" name="CourseID">
+                  <input type="text" placeholder="EX.08001112" class="form-control" name="CourseID" required>
                 </div>
               </div>
               <div class="mb-3 mt-3 row">
                 <label class="col-sm-2 col-form-label">name</label>
                 <div class="col-sm-10">
-                  <input type="text" placeholder="EX.English" class="form-control" name="CourseName">
+                  <input type="text" placeholder="EX.English" class="form-control" name="CourseName" required>
                 </div>
               </div>
               
               <label for="message">CourseDetail:</label>
               <br>
-              <textarea id="message" name="detail" class="form-control" rows="8" ></textarea>
+              <textarea id="message" name="detail" class="form-control" rows="8" required ></textarea>
               <br>
               <input type="submit" value="Submit">
             </form>
