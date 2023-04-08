@@ -133,7 +133,7 @@ $(document).ready(function() {
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item me-lg-2 mb-2">
-          <a class="btn fw-bold nav-link" style="background-color: #F1BB93;" aria-current="page" href="homepage.php">Main Page</a>
+          <a class="btn fw-bold nav-link" style="background-color: #F1BB93;" aria-current="page" href="homepage.php">homepage</a>
         </li>
         <?php if ($ro != "") { ?>
           <li class="nav-item me-lg-2 mb-2">

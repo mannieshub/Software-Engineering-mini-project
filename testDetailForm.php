@@ -136,20 +136,11 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             </div>
                         </div>
                         <?php
-<<<<<<< HEAD
-                        echo $CourseID;
-
-                        foreach ($conn->query("SELECT COUNT(*) FROM coursecomment WHERE CourseID = '" . $CourseID . "';") as $i) {
-    $count = $i[0];
-}
-=======
                         foreach ($conn->query("SELECT COUNT(*) FROM coursecomment WHERE CourseID = '" . $CourseID . "';") as $i) {
                             $count = $i[0];
                         }
->>>>>>> 097f1d78b42d2ee9c615ebb52f84e00b934aecc4
                         ?>
                         <div class="card-footer bg-white">
-                            <?php echo $CourseID;?>
                             <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-2" aria-expanded="false" aria-controls="collapseExample">
                                 ดูความคิดเห็น (<?= $count ?>)
                             </button>
