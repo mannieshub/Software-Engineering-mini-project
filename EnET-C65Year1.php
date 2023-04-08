@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EnET C-60 Year 1</title>
+  <title>EnET C-65 Year 1</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -44,6 +44,17 @@
       left: 50%;
       transform: translateX(-50%);
     }
+
+    .card-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-text:hover {
+      white-space: normal;
+      overflow: visible;
+    }
   </style>
   <script>
     $(function() {
@@ -78,7 +89,7 @@
         <!---อันนี้แก้ให้สวยแล้ว--->
         <div class="col col-12">
           <form action="testDetailForm.php" method="post">
-            <div class="card h-100">
+            <div class="card ">
               <div class="card-body" style="background-color:#F1EBCC;">
                 <h5 class="card-title fw-bold">030103300</h5>
                 <p class="card-text">Engineering Drawing</p>
@@ -99,7 +110,7 @@
 
         <div class="col col-12">
           <form action="testDetailForm.php" method="post">
-            <div class="card h-100">
+            <div class="card ">
               <div class="card-body" style="background-color:#F1EBCC ;">
                 <h5 class="card-title fw-bold">030513900</h5>
                 <p class="card-text">Computer Programming</p>
@@ -119,7 +130,7 @@
 
 
         <div class="col col-12">
-          <div class="card h-100">
+          <div class="card ">
             <div class="card-body" style="background-color:#F1EBCC ;">
               <div>
                 <h5 class="card-title fw-bold">040203111</h5>
@@ -151,7 +162,7 @@
 
 
         <div class="col col-12">
-          <div class="card h-100">
+          <div class="card ">
             <div class="card-body" style="background-color:#F1EBCC ;">
               <h5 class="card-title fw-bold">040313005</h5>
               <p class="card-text">Physics 1</p>

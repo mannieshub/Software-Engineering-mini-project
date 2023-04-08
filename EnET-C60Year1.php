@@ -18,7 +18,16 @@
     button {
       background: #F1BB93;
     }
+    .card-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
+    .card-text:hover {
+      white-space: normal;
+      overflow: visible;
+    }
     .sidebar {
       background-color: #EDDCBC;
       height: 100%;
