@@ -136,11 +136,17 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             </div>
                         </div>
                         <?php
+<<<<<<< HEAD
                         echo $CourseID;
 
                         foreach ($conn->query("SELECT COUNT(*) FROM coursecomment WHERE CourseID = '" . $CourseID . "';") as $i) {
     $count = $i[0];
 }
+=======
+                        foreach ($conn->query("SELECT COUNT(*) FROM coursecomment WHERE CourseID = '" . $CourseID . "';") as $i) {
+                            $count = $i[0];
+                        }
+>>>>>>> 097f1d78b42d2ee9c615ebb52f84e00b934aecc4
                         ?>
                         <div class="card-footer bg-white">
                             <?php echo $CourseID;?>
@@ -154,7 +160,7 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             <?php } ?>
                             <div class="collapse" id="id<?= $CourseID ?>-2"> <!-- Comment loop fetch -->
                                 <?php
-                                $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = " . $CourseID . ";");
+                                $result = $conn->query("SELECT c.* , u.stdName FROM coursecomment c , studentdb u WHERE c.stdID = u.stdID AND c.CourseID = '" . $CourseID . "';");
 
                                 foreach ($result as $row1) {
 
@@ -217,7 +223,7 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                 <div class="col-1"></div>
             </div>
         <?php
-    } elseif (isset($_POST['sbar']) && !empty($_POST['sbar']) || isset($_SESSION['sbar']) && !empty($_SESSION['sbar'])) {
+    } elseif ((isset($_POST['sbar']) && !empty(trim($_POST['sbar']))) || (isset($_SESSION['sbar']) && !empty(trim($_SESSION['sbar'])))) {
         if (isset($_POST['sbar']) && !empty($_POST['sbar'])) {
             $search_term = $_POST['sbar'];
             unset($_POST['sbar']);
@@ -538,10 +544,10 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                 //echo "0 results";
                 ?>
 
-                <div class="row">
+                <div class="row my-5">
                     <div class="col-1"></div>
                     <div class="col-10">
-                        <h3>ไม่พบข้อมูลจากฐานข้อมูล</h3>
+                        <center><h3>ไม่พบข้อมูลจากฐานข้อมูล</h3></center>
                     </div>
                     <div class="col-1"></div>
                 </div>
@@ -552,7 +558,10 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
             // close database connection
             $conn = null;
             ?>
-        <?php } ?>
+        <?php }else{
+            header('Location: '.$_SERVER['HTTP_REFERER']);
+            exit;
+        } ?>
         </div>
 </body>
 
