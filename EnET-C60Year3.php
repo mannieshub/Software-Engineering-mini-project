@@ -197,6 +197,7 @@
         <div class="card-body" style="background-color:#F1EBCC ;">
           <h5 class="card-title fw-bold">XXXXXXXXX</h5>
           <p class="card-text">Free Elective Course 1</p>
+
           <form action="testDetailForm.php" method="post">
             <div class="d-flex justify-content-between align-items-end mt-3">
               <input type="hidden" name="CourseID" value="XXXXXXXXX">

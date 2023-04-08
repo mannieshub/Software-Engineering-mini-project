@@ -99,27 +99,40 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            
           </div>
           <div class="carousel-inner">
+         
             <div class="carousel-item active">
-              <img src="sheep.png" class="d-block w-100" alt="...">
+              <img src="mans.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h2>PONGPISUT PRASRI</h2>
+                <h4>PROJECT MANAGER / PROGRAMMER</h4>
+                <h5>สุดยอดนักวางกลยุทธ์ผู้ได้รับสมญานามว่าขงเบ๊งแห่งพระนครเหนือ</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="sheep.png" class="d-block w-100" alt="...">
+              <img src="NoteTrue.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h2>APINUN UMBRO</h2>
+                <h4>PROGRAMMER</h4>
+                <h5>สุดยอดโปรแกรมเมอร์มือฉบังแห่งยุคโซชอน</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="sheep.png" class="d-block w-100" alt="...">
+              <img src="GiftUI.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h2>GITTIYAPORN</h2>
+                <h4>UX/UI DESIGNER</h4>
+                <h5>ผู้เชี่ยวชาญด้านการออกแบบประสบการณ์ของผู้ใช้งาน</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="GiftUI.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>PAWARESS JAROONCHAI</h5>
+                <p>TESTOR/SYSTEM ANALYSIS</p>
               </div>
             </div>
           </div>

@@ -182,9 +182,9 @@
         <div class="col-2">
             <div class="card" style="width: 18rem;">
                 <div class="card-body" style="background-color:#F1EBCC ;">
-                  <h5 class="card-title fw-bold">xxxxxxxxx</h5>
+                  <h5 class="card-title fw-bold">XXXXXXXXX</h5>
                   <p class="card-text">Free Elective Course I</p>
-                  <input type="hidden" name="CourseID" value="xxxxxxxxx">
+                  <input type="hidden" name="CourseID" value="XXXXXXXXX">
                   <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
                 </div>
