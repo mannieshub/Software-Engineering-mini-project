@@ -107,7 +107,6 @@ if ($ro != "Admin") {
   <center >
   <a href='Admin_add.php' class='btn btn-success mx-3'>Add</a> 
   <a href='Admin_edit.php' class='btn btn-primary mx-3'>Edit</a> 
-  <a href='Admin_delete.php' class='btn btn-danger mx-3'>Delete</a>
   </center>
 </div>
     <script>

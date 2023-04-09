@@ -414,42 +414,43 @@
           </div>
 
           <div class="col col-12">
-            
+            <form action="Elective-Course.php" method="post">
               <div class="card h-100">
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">0801030XX</h5>
                   <p class="card-text">Language Elective Course 2</p>
                   <div class="d-flex justify-content-between align-items-end mt-3">
-                  <form action="Elective-Course.php" method="post">
+                  
                     <input type="hidden" name="CourseID" value="0801030XX">
                     <div class="ms-auto">
                       <button type="submit" class="btn" style="background-color: #F1BB93;">
                         <i class="bi bi-search"></i>View
                       </button>
-                    </div>
-                  </form>
-                  </div>
+                      </div>
                 </div>
               </div>
-          </div>
+            </div>
+          </form>
+        </div>
 
           <div class="col col-12">
+            <form action="Elective-Course.php" method="post">
               <div class="card h-100">
                 <div class="card-body" style="background-color:#F1EBCC ;">
                   <h5 class="card-title fw-bold">0803035XX</h5>
                   <p class="card-text">Physical Education Elective</p>
                   <div class="d-flex justify-content-between align-items-end mt-3">
-                  <form action="Elective-Course.php" method="post">
+                  
                     <input type="hidden" name="CourseID" value="0803035XX">
                     <div class="ms-auto">
                       <button type="submit" class="btn" style="background-color: #F1BB93;">
                         <i class="bi bi-search"></i>View</button>
-                    </div>
-                  </form>
-                  </div>
+                        </div>
                 </div>
               </div>
-          </div>
+            </div>
+          </form>
+        </div>
 
 
 

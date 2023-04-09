@@ -209,7 +209,7 @@
 
         <div class="col col-12"> <!---ไม่มีข้อมูลในระบบ--->
 
-          <form action="testDetailForm.php" method="post">
+          <form action="Elective-Course.php" method="post">
             <div class="card ">
               <div class="card-body" style="background-color:#F1EBCC ;">
                 <h5 class="card-title fw-bold">04XXXXXXX</h5>
@@ -273,7 +273,7 @@
                 <h5 class="card-title fw-bold">08xxxxxxx</h5>
                 <p class="card-text">Sport & Recreation Elective Course 1</p>
                 <div class="d-flex justify-content-between align-items-end mt-3">
-                  <input type="hidden" name="CourseID" value="08xxxxxxx">
+                  <input type="hidden" name="CourseID" value="0803035XX">
                   <div class="ms-auto">
                     <button type="submit" class="btn" style="background-color: #F1BB93;">
                       <i class="bi bi-search"></i>View</button>
@@ -444,13 +444,13 @@
           </div>
 
           <div class="col col-12">
-            <form action="testDetailForm.php" method="post">
+            <form action="Elective-Course.php" method="post">
               <div class="card h-100">
                 <div class="card-body" style="background-color:#F1EBCC;">
                   <h5 class="card-title fw-bold">08xxxxxxx</h5>
                   <p class="card-text">Sport & Recreation Elective Course 2</p>
                   <div class="d-flex justify-content-between align-items-end mt-3">
-                    <input type="hidden" name="CourseID" value="08xxxxxxx"><!---แก้รหัสของวิชานี้ให้ตรง--->
+                    <input type="hidden" name="CourseID" value="0803035XX"><!---แก้รหัสของวิชานี้ให้ตรง--->
                     <div class="ms-auto">
                       <button type="submit" class="btn" style="background-color: #F1BB93;">
                         <i class="bi bi-search"></i>View
