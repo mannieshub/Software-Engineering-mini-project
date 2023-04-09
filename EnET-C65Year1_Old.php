@@ -145,11 +145,6 @@
             <div class="d-flex justify-content-between align-items-end mt-3">
               <form action="testDetailForm.php" method="post">
                 <input type="hidden" name="CourseID" value="040203111">
-                <button type="submit" class="btn" style="background-color: #F1BB93;">Elec. Circuit I</button>
-              </form>
-
-              <form action="testDetailForm.php" method="post">
-                <input type="hidden" name="CourseID" value="040203111">
                 <button type="submit" class="btn" style="background-color: #F1BB93;">
                   <i class="bi bi-search"></i>View</button>
               </form>
@@ -158,9 +153,7 @@
             <form action="testDetailForm.php" method="post">
               <div class="d-flex justify-content-between align-items-end mt-3">
                 <input type="hidden" name="CourseID" value="040203111">
-                
                   <button type="submit" class="btn" style="background-color: #F1BB93;">Eng. Math II</button>
-                
               </div>
             </form>
           </div>
