@@ -148,12 +148,6 @@
                     <i class="bi bi-search"></i>View</button>
                 </form>
               </div>
-              <form action="testDetailForm.php" method="post">
-                <div class="d-flex justify-content-between align-items-end mt-3">
-                  <input type="hidden" name="CourseID" value="030413100"><!---แก้รหัสของตัวต่อให้ตรง--->
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">Elec. Circuit 1</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -179,12 +173,6 @@
                     <i class="bi bi-search"></i>View</button>
                 </form>
               </div>
-              <form action="testDetailForm.php" method="post">
-                <div class="d-flex justify-content-between align-items-end mt-3">
-                  <input type="hidden" name="CourseID" value="040313015"><!---แก้รหัสของตัวต่อให้ตรง--->
-                  <button type="submit" class="btn" style="background-color: #F1BB93;">Physics Lab 2</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
