@@ -101,8 +101,8 @@ $email = $_SESSION["email"];
       }
         
           ?>
-          <div class="card text-dark bg-white border-primary">
-            <div class="card-header bg-primary text-white ">Edit Profile</div>
+          <div class="card text-dark bg-white ">
+            <div class="card-header  text-white "style="background-color:#F1BB93">Edit Profile</div>
             <div class="card-body">
               <div class="row mb-3 ">
                 <label class="col-md-3 col-form-label">Name :</label>
@@ -140,8 +140,8 @@ $email = $_SESSION["email"];
               <div class="row mb-3">
                 <div class="col-1"></div>
                 <div class="col-md-10 d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary btn-sm bi bi-save w-50 me-5"> Save </button>
-                  <a href="Ch_pwd.php" class="btn btn-danger btn-sm  w-50"> Change Password </a>
+                  <button type="submit" class="btn  btn-sm bi bi-save w-50 me-5" style="background-color: #F1BB93;"> Save </button>
+                  <a href="Ch_pwd.php" class="btn btn-sm  w-50" style="background-color: #F1BB93;"> Change Password </a>
                 </div>
                 <div class="col-1"></div>
               </div>
