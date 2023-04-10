@@ -76,8 +76,8 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-10">
-                    <div class="card my-4 text-dark bg-white border-info">
-                        <div class="card-header text-white bg-info">
+                    <div class="card my-4 text-dark bg-white">
+                        <div class="card-header text-white " style="background-color: #F1BB93;">
                             <div class="card-title">
                                 <h4 class="bi bi-person-circle">
                                     <?php
@@ -113,7 +113,7 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             </div>
 
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: #EDDCBC;">
                             <div class="card-title">
 
                                 <h5><?php
@@ -140,12 +140,12 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             $count = $i[0];
                         }
                         ?>
-                        <div class="card-footer bg-white">
-                            <button class="btn btn-warning mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-2" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="card-footer" style="background-color: #EDDCBC;">
+                            <button class="btn mt-2 text-white" style="background-color: #F1BB93;"type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-2" aria-expanded="false" aria-controls="collapseExample">
                                 ดูความคิดเห็น (<?= $count ?>)
                             </button>
                             <?php if($ro != "") {?>
-                            <button class="btn btn-success mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-3" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn  mt-2 text-white" type="button" style="background-color: #F1BB93;" data-bs-toggle="collapse" data-bs-target="#id<?= $CourseID ?>-3" aria-expanded="false" aria-controls="collapseExample">
                                 แสดงความคิดเห็น
                             </button>
                             <?php } ?>
@@ -183,21 +183,21 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                                 ?>
                             </div>
                         </div>
-                        <div class="collapse" id="id<?= $CourseID ?>-3">
-                            <div class="card text-dark bg-white border-success mx-5 my-3">
-                                <div class="card-header bg-success text-white">แสดงความคิดเห็น</div>
+                        <div class="collapse" style="background-color: #EDDCBC;"id="id<?= $CourseID ?>-3">
+                            <div class="card text-dark  mx-5 my-3">
+                                <div class="card-header text-white" style="background-color: #F1BB93;">แสดงความคิดเห็น</div>
                                 <div class="card-body">
                                     <form action="comsave.php" method="post">
                                         <input type="hidden" name="post_id" value="<?= $CourseID ?>">
                                         <div class="row mb-3 justify-content-center">
-                                            <div class="col-lg-10">
-                                                <textarea name="comment" class="form-control" rows="8"></textarea>
+                                            <div class="col-lg-12">
+                                                <textarea name="comment" class="form-control" rows="9"></textarea>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <center>
-                                                    <button type="submit" class="btn btn-success btn-sm text-white">
+                                                    <button type="submit" class="btn btn-sm text-white" style="background-color: #F1BB93;">
                                                         <i class="bi bi-box-arrow-up-right me-1"></i>
                                                         ส่งข้อความ
                                                     </button>
