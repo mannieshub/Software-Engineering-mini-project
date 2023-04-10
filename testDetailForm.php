@@ -184,7 +184,7 @@ isset($_SESSION['role']) ? $ro = $_SESSION['role'] : $ro = "";
                             </div>
                         </div>
                         <div class="collapse" style="background-color: #EDDCBC;"id="id<?= $CourseID ?>-3">
-                            <div class="card text-dark  mx-5 my-3">
+                            <div class="card text-dark  border-secondary mx-5 my-3">
                                 <div class="card-header text-white" style="background-color: #F1BB93;">แสดงความคิดเห็น</div>
                                 <div class="card-body">
                                     <form action="comsave.php" method="post">

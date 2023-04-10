@@ -102,8 +102,8 @@ $email = $_SESSION["email"];
             unset($_SESSION["p_error"]);
           }
           ?>
-          <div class="card text-dark bg-white border-primary">
-            <div class="card-header bg-primary text-white ">Change Password</div>
+          <div class="card text-dark bg-white">
+            <div class="card-header  text-white "style="background-color:#F1BB93">Change Password</div>
             <div class="card-body">
               <div class="row mb-3 ">
 
@@ -152,7 +152,7 @@ $email = $_SESSION["email"];
                 <div class="row mb-3">
                   <div class="col-1"></div>
                   <div class="col-md-10 d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary btn-sm bi bi-save w-75"> Save </button>
+                    <button type="submit" class="btn  btn-sm bi bi-save w-75"style="background-color:#F1BB93"> Save </button>
 
                   </div>
                   <div class="col-1"></div>
