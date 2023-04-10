@@ -59,7 +59,7 @@ if ($ro == "") {
       </div>
       <div class="col-4">
         <div class="card">
-          <div class="card-header">
+        <div class="card-header  text-white "style="background-color:#F1BB93">
             <h3>Report to Admin</h3>
           </div>
           <div class="card-body">
@@ -82,7 +82,12 @@ if ($ro == "") {
               <br>
               <textarea id="message" name="detail" class="form-control" rows="8" required></textarea>
               <br>
-              <input type="submit" value="Submit" require>
+              <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 text-center mt-3 fs-5"><button type="submit" class="btn  btn-sm bi bi-save w-50 me-5" style="background-color: #F1BB93;"> submit </button></div>
+        <div class="col-2"></div>
+      </div>
+              
             </form>
           </div>
         </div>
