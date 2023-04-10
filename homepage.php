@@ -105,7 +105,7 @@
           <div class="carousel-inner">
          
             <div class="carousel-item active">
-              <img src="mans.jpg" class="d-block w-100" alt="...">
+              <img src="mans.jpeg" class="d-block w-100 " alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h2>PONGPISUT PRASRI</h2>
                 <h4>PROJECT MANAGER / PROGRAMMER</h4>
@@ -117,19 +117,19 @@
               <div class="carousel-caption d-none d-md-block">
                 <h2>APINUN UMBRO</h2>
                 <h4>PROGRAMMER</h4>
-                <h5>สุดยอดโปรแกรมเมอร์มือฉบังแห่งยุคโซชอน</h5>
+                <h5>สุดยอดโปรแกรมเมอร์มือฉมังแห่งยุคโชชอน</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="GiftUI.jpg" class="d-block w-100" alt="...">
+              <img src="GiftUI.jpeg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h2>GITTIYAPORN</h2>
+                <h2>GITTIYAPON JANTARAOPAS</h2>
                 <h4>UX/UI DESIGNER</h4>
                 <h5>ผู้เชี่ยวชาญด้านการออกแบบประสบการณ์ของผู้ใช้งาน</h5>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="GiftUI.jpg" class="d-block w-100" alt="...">
+              <img src="max.jpeg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>PAWARESS JAROONCHAI</h5>
                 <p>TESTOR/SYSTEM ANALYSIS</p>
